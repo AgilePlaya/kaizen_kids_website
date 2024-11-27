@@ -118,4 +118,5 @@ jobs:
           BRANCH: gh-staging # The branch name where you want to push the assets
           FOLDER: build # The directory where your assets are generated
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          TAG: "build_v${{ steps.detect-ver.outputs.pkg_ver }}"
           MESSAGE: "Staging-Build: ({sha}) ${{ steps.detect-ver.outputs.pkg_ver }}"
