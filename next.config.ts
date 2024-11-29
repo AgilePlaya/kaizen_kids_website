@@ -5,14 +5,24 @@ const nextConfig: NextConfig = {
   distDir: "build",
   output: 'export',
   reactStrictMode: true,
-};
-
-export default nextConfig;
-
-module.exports = {
   images: {
+    unoptimized: true,
     remotePatterns: [{
       'hostname': 'images.unsplash.com',
     }]
   }
-}
+};
+
+export default nextConfig;
+
+// module.exports = {
+//   /* config options here */
+//   distDir: "build",
+//   output: 'export',
+//   reactStrictMode: true,
+//   images: {
+//     remotePatterns: [{
+//       'hostname': 'images.unsplash.com',
+//     }]
+//   }
+// }

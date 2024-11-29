@@ -47,6 +47,7 @@ const Slider = ({ slides }: { [key: string]: any }) => {
                     height="600"
                     loading="lazy"
                     className="rounded-3xl object-cover"
+                    unoptimized
                   />
                 )}
                 <FaArrowAltCircleRight
