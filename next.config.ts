@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   distDir: "build",
   output: 'export',
   reactStrictMode: true,
+  assetPrefix: './',
   images: {
     unoptimized: true,
     remotePatterns: [{
