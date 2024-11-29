@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Head from "next/head";
 import Hero from "@/components/Hero";
-import type { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from 'next'
+import type {
+  InferGetStaticPropsType,
+  GetStaticProps,
+  GetStaticPaths,
+} from "next";
+import Slider from "@/components/Slider";
+import { SliderData } from "@/components/SliderData";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -14,16 +20,20 @@ import type { InferGetStaticPropsType, GetStaticProps, GetStaticPaths } from 'ne
 //   weight: "100 900",
 // });
 
+
 export default function Home() {
   return (
     <div>
       <Head>
         <title>KaizenKids</title>
-        <meta name='description' content="KaizenKids website" />
+        <meta name="description" content="KaizenKids website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Hero heading="Landing Area" message="Our students will be confident speakers, respectful listeners, creative problem solvers and experiential learners. They will also show team work as part of their holistic development.">
-      </Hero>
+      <Hero
+        heading="Landing Area"
+        message="Our students will be confident speakers, respectful listeners, creative problem solvers and experiential learners. They will also show team work as part of their holistic development."
+      ></Hero>
+      <Slider slides={ SliderData } />
     </div>
   );
 }
