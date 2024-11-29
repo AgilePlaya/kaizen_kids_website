@@ -8,3 +8,11 @@ const nextConfig: NextConfig = {
 };
 
 export default nextConfig;
+
+module.exports = {
+  images: {
+    remotePatterns: [{
+      'hostname': 'images.unsplash.com',
+    }]
+  }
+}
