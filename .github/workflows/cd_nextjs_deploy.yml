@@ -85,7 +85,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-artifact@v4
         with:
-          name: gh-Pages-Artifact
+          name: github-pages
           path: build
           retention-days: 30
 
