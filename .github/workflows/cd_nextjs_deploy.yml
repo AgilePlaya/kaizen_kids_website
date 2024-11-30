@@ -78,7 +78,6 @@ jobs:
 
             - name: Install dependencies
               run: |
-                  ${{ steps.detect-package-manager.outputs.manager }} config set legacy-peer-deps true
                   ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
             - name: Build with Next.js
