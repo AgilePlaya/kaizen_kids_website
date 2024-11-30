@@ -8,10 +8,10 @@ const Footer = () => {
   return (
     <footer
       id="footer"
-      className="bg-zinc-900 text-gray-400 px-8 py-8 text-center text-base"
+      className="bg-zinc-900 text-gray-400 px-8 py-8 text-center text-base sm:px-16 md:px-32 lg:px-4 xl:px-16 2xl:px-48"
     >
       {/* Desktop version */}
-      <div className="hidden lg:flex px-4">
+      <div className="hidden lg:flex">
         <div className="row-primary w-full">
           {/* Google Maps */}
           <div className="w-full flex flex-col px-2 pb-6 min-h-80 ">
@@ -130,7 +130,7 @@ const Footer = () => {
       {/* Desktop Copyright and credits */}
       <div className="hidden lg:block w-full bg-zinc-800 rounded-xl">
         <p className="p-4 text-slate-300">
-          Desktop Copyright &copy; 2024 || Designed By:{" "}
+          Copyright &copy; 2024 || Designed By:{" "}
           <Link
             href="https://github.com/AgilePlaya"
             className="hover:text-cyan-300 ease-in duration-300"
@@ -151,7 +151,7 @@ const Footer = () => {
             AgilePlaya
           </Link>
           <br />
-          Mobile Copyright &copy; 2024
+          Copyright &copy; 2024
         </p>
       </div>
     </footer>
