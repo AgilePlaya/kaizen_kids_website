@@ -15,15 +15,15 @@ export default function App({ Component, pageProps, router }: AppProps) {
         <Component key={router.route} {...pageProps} />
       </AnimatePresence>
       {/* <Footer /> */}
-      {/* <Analytics
+      <Analytics
         beforeSend={(event) => {
           if (localStorage.getItem("va-disable")) {
             return null;
           }
           return event;
         }}
-      /> */}
-      {/* <SpeedInsights /> */}
+      />
+      <SpeedInsights />
     </>
   );
 }

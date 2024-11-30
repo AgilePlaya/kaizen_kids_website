@@ -65,7 +65,6 @@ jobs:
 
             - name: Install dependencies
               run: |
-                  ${{ steps.detect-pm.outputs.manager }} config set legacy-peer-deps true
                   ${{ steps.detect-pm.outputs.manager }} ${{ steps.detect-pm.outputs.command }}
 
             - name: Build with NodeJS
@@ -111,9 +110,7 @@ jobs:
                   cache: ${{ steps.detect-ver.outputs.manager }}
 
             - name: Install all dependencies
-              run: |
-                  npm config set legacy-peer-deps true
-                  npm install
+              run: npm install
 
             - name: Build
               run: npm run build

@@ -60,7 +60,6 @@ jobs:
 
             - name: Install dependencies
               run: |
-                  ${{ steps.detect-pm.outputs.manager }} config set legacy-peer-deps true
                   ${{ steps.detect-pm.outputs.manager }} ${{ steps.detect-pm.outputs.command }}
 
             - name: Build with NodeJS
