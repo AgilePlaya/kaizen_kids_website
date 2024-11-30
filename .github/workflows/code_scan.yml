@@ -10,10 +10,10 @@ name: "Nightly Scan"
 
 on:
   push:
-    branches: [ "main" ]
+    branches: [ "main", "main-staging" ]
   pull_request:
     # The branches below must be a subset of the branches above
-    branches: [ "main" ]
+    branches: [ "main", "main-staging" ]
   schedule:
     - cron: '45 20 * * *'
 
