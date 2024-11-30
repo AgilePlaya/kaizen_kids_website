@@ -58,12 +58,12 @@ jobs:
       
       - name: Setup Pages
         uses: actions/configure-pages@v5
-        with:
-          # Automatically inject basePath in your Next.js configuration file and disable
-          # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
-          #
-          # You may remove this line if you want to manage the configuration yourself.
-          static_site_generator: next
+        # with:
+        #   # Automatically inject basePath in your Next.js configuration file and disable
+        #   # server side image optimization (https://nextjs.org/docs/api-reference/next/image#unoptimized).
+        #   #
+        #   # You may remove this line if you want to manage the configuration yourself.
+        #   static_site_generator: next
       
       - name: Restore cache
         uses: actions/cache@v4
@@ -88,6 +88,8 @@ jobs:
           name: github-pages
           path: build
           retention-days: 30
+          if-no-files-found: error
+          include-hidden-files: true
 
   # Deployment job
   Deploy_Pages:
