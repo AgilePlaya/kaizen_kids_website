@@ -2,12 +2,13 @@ import Image from "next/image";
 import Head from "next/head";
 import Hero from "@/components/Hero";
 import type {
-  InferGetStaticPropsType,
-  GetStaticProps,
-  GetStaticPaths,
+    InferGetStaticPropsType,
+    GetStaticProps,
+    GetStaticPaths,
 } from "next";
 import Slider from "@/components/Slider";
 import { SliderData } from "@/components/SliderData";
+import TransitionPage from "@/components/transition";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -21,18 +22,20 @@ import { SliderData } from "@/components/SliderData";
 // });
 
 export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>KaizenKids</title>
-        <meta name="description" content="KaizenKids website" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-      <Hero
-        heading="Landing Area"
-        message="Our students will be confident speakers, respectful listeners, creative problem solvers and experiential learners. They will also show team work as part of their holistic development."
-      ></Hero>
-      <Slider slides={ SliderData } />
-    </div>
-  );
+    return (
+        <>
+            <Head>
+                <title>KaizenKids</title>
+                <meta name="description" content="KaizenKids website" />
+                <link rel="icon" href="/favicon.ico" />
+            </Head>
+            <TransitionPage>
+                <Hero
+                    heading="Landing Area"
+                    message="Our students will be confident speakers, respectful listeners, creative problem solvers and experiential learners. They will also show team work as part of their holistic development."
+                />
+                <Slider slides={SliderData} />
+            </TransitionPage>
+        </>
+    );
 }
