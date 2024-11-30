@@ -1,0 +1,42 @@
+name: "[CI] Release Pipeline"
+
+on:
+  push:
+    branches: ["main"]
+    tags: ["v*"] # Push events to matching v*, i.e. v1.0, v20.15.10
+  workflow_dispatch:
+
+jobs:
+  Generate_Release:
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Detect version
+        id: detect-ver
+        run: |
+          sudo apt install jq -y
+          if [ -f "${{ github.workspace }}/package.json" ]; then
+            export PKG_VER="$(jq -r '.version' package.json)"
+            echo "pkg_ver=$PKG_VER" >> $GITHUB_OUTPUT
+            echo "manager=npm" >> $GITHUB_OUTPUT
+            echo "command=ci" >> $GITHUB_OUTPUT
+          else
+            echo "************************************************************"
+            echo "Version file not found. Please ensure package.json exists"
+            echo "************************************************************"
+            exit 1
+          fi
+
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This token is provided by Actions, you do not need to create your own token
+        with:
+          tag_name: "build_v${{ steps.detect-ver.outputs.pkg_ver }}"
+          release_name: "Release_${{ github.ref }}"
+          draft: false
+          prerelease: false
