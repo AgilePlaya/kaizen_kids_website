@@ -29,6 +29,22 @@ html {
   align-items: stretch;
 }
 
+.parallax {
+  perspective: 1px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.parallax_layer--back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: translateZ(-1px) scale(2);
+}
+
 /* body {
   color: var(--foreground);
   background: var(--background);
