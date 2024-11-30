@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <div
       style={{ backgroundColor: `${color}` }}
-      className="fixed left-0 top-0 w-full z-10 ease-in duration-300 rounded-b-2xl"
+      className="fixed left-0 top-0 w-full z-10 ease-in duration-300"
     >
       <div className="max-w-[1240px] m-auto flex justify-between items-center p-4 text-white">
         <Link href="/">
@@ -46,9 +46,9 @@ const Navbar = () => {
           <li className="p-4 font-semibold hover:text-gray-500 ease-in duration-300">
             <Link href="/about">About</Link>
           </li>
-          <li className="p-4 font-semibold hover:text-gray-500 ease-in duration-300">
+          {/* <li className="p-4 font-semibold hover:text-gray-500 ease-in duration-300">
             <Link href="/#contact">Contact</Link>
-          </li>
+          </li> */}
           <li className="p-4 font-bold hover:text-gray-500 ease-in duration-300">
             <Link href="/apply">Apply Now</Link>
           </li>
@@ -77,9 +77,9 @@ const Navbar = () => {
             <li className="p-4 text-4xl hover:text-gray-500 ease-in duration-300">
               <Link href="/about">About</Link>
             </li>
-            <li className="p-4 text-4xl hover:text-gray-500 ease-in duration-300">
+            {/* <li className="p-4 text-4xl hover:text-gray-500 ease-in duration-300">
               <Link href="/#contact">Contact</Link>
-            </li>
+            </li> */}
             <li className="p-4 text-4xl hover:text-gray-500 ease-in duration-300">
               <Link href="/apply">Apply Now</Link>
             </li>
