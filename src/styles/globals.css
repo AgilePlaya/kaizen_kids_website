@@ -25,7 +25,7 @@ html {
 
 .row-primary {
   display: grid;
-  grid-template-columns: 4fr 2fr;
+  grid-template-columns: 2fr 1fr;
   align-items: stretch;
 }
 
