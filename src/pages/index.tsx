@@ -1,14 +1,16 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import Slider from "@/components/Slider";
+import { SliderData } from "@/components/SliderData";
+import TransitionPage from "@/components/transition";
 import Image from "next/image";
 import Head from "next/head";
-import Hero from "@/components/Hero";
 import type {
     InferGetStaticPropsType,
     GetStaticProps,
     GetStaticPaths,
 } from "next";
-import Slider from "@/components/Slider";
-import { SliderData } from "@/components/SliderData";
-import TransitionPage from "@/components/transition";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",
@@ -30,11 +32,16 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <TransitionPage>
+                <Navbar />
                 <Hero
                     heading="Landing Area"
                     message="Our students will be confident speakers, respectful listeners, creative problem solvers and experiential learners. They will also show team work as part of their holistic development."
                 />
                 <Slider slides={SliderData} />
+                {/* <div>
+
+                </div> */}
+                <Footer />
             </TransitionPage>
         </>
     );

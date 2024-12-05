@@ -1,3 +1,5 @@
+import Footer from "@/components/Footer";
+import Navbar from "@/components/Navbar";
 import TransitionPage from "@/components/transition";
 import React from "react";
 
@@ -5,6 +7,7 @@ const about = () => {
     return (
         <>
             <TransitionPage>
+                <Navbar />
                 <div id="apply" className="min-h-full bg-gray-700">
                     <div className="flex items-center justify-center h-[80vh] bg-fixed bg-center bg-cover custom-img">
                         {/* Overlay */}
@@ -33,6 +36,7 @@ const about = () => {
                         repellendus.
                     </p>
                 </div>
+                <Footer />
             </TransitionPage>
         </>
     );
