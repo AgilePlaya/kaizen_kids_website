@@ -112,17 +112,17 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
             },
             transitionEnd: {
                 top: "45%",
-                left: "52.5%",
+                left: "-15%",
                 opacity: 0,
             },
         },
         exit: {
             opacity: 1,
-            left: "47.5%",
+            left: "50%",
             transition: {
-                duration: 0.5,
+                duration: 0.65,
                 delay: 0.35,
-                ease: [0.2, 1, 0.68, 1],
+                ease: [0.16, 1, 0.3, 1],
             },
         },
     };
@@ -143,7 +143,7 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
         <div className="page curve">
             <motion.p
                 {...anim(textanim)}
-                className="absolute top-[45%] left-[47.5%] text-center justify-center font-bold -translate-x-1/2 text-[60px] text-white scroll-auto z-40"
+                className="absolute top-[45%] left-[50%] text-center justify-center font-bold -translate-x-1/2 text-5xl xl:text-8xl text-white scroll-auto z-40"
             >
                 {routes[router.route as keyof typeof routes]}
             </motion.p>
@@ -152,9 +152,7 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
                 className="w-full h-[calc(100vh+800px)] top-[-400px] left=0 fixed pointer-events-none bg-black z-[38]"
             />
             {dimensions.width > 0 && <SVG {...dimensions} />}
-            <Navbar />
             {children}
-            <Footer />
         </div>
     );
 }
