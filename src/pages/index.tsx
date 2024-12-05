@@ -6,11 +6,6 @@ import { SliderData } from "@/components/SliderData";
 import TransitionPage from "@/components/transition";
 import Image from "next/image";
 import Head from "next/head";
-import type {
-    InferGetStaticPropsType,
-    GetStaticProps,
-    GetStaticPaths,
-} from "next";
 
 // const geistSans = localFont({
 //   src: "./fonts/GeistVF.woff",

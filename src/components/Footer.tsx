@@ -10,7 +10,7 @@ const Footer = () => {
       id="footer"
       className="bg-zinc-900 text-gray-400 px-8 py-8 text-center text-base sm:px-16 md:px-32 lg:px-4 xl:px-16 2xl:px-48"
     >
-      <div id="contact" className="max-w-[1240px] m-auto">
+      <div className="max-w-[1240px] m-auto">
         {/* Desktop version */}
         <div className="hidden lg:flex">
           <div className="row-primary w-full">
