@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import ImImg1 from "../../public/TP_LR_DSC2522.jpg";
+import ImImg1 from "@/../public/media/hero_media_resized.jpg";
 import { FaArrowRight } from "react-icons/fa";
 
 const Hero = ({ heading, message }: { [key: string]: any }) => {
@@ -19,7 +19,7 @@ const Hero = ({ heading, message }: { [key: string]: any }) => {
                 <div className="container p-10 max-w-[1240px] m-auto pb-20 ">
                     <div>
                         <div className="md:flex items-center">
-                            <div className="md:max-w-[420] md:min-w-[540] md:pr-10">
+                            <div className="md:max-w-[420px] md:min-w-[540px] md:pr-10">
                                 <div className="flex">
                                     <div className="tag pointer-events-none">Join Us Now</div>
                                 </div>
@@ -28,7 +28,7 @@ const Hero = ({ heading, message }: { [key: string]: any }) => {
                                     {heading}
                                 </h1>
                                 <p className="text-base md:text-lg text-[#010D3E] mt-6 pointer-events-none">{message}</p>
-                                <div className="flex gap-2 items-center mt-[30]">
+                                <div className="flex gap-2 items-center mt-[30px]">
                                     <button className="btn btn-primary">Apply Now</button>
                                     <button className="btn btn-text">
                                         <span>Learn More</span>
@@ -36,7 +36,7 @@ const Hero = ({ heading, message }: { [key: string]: any }) => {
                                     </button>
                                 </div>
                             </div>
-                            <div className="flex mt-16 md:mt-0 md:max-h-[648] md:flex-1 justify-center md:justify-end relative">
+                            <div className="flex mt-16 md:mt-0 md:max-h-[648px] md:flex-1 justify-center md:justify-end m-auto relative">
                                 <Image
                                     src={ImImg1}
                                     alt="Students of Kaizen Kids playing with some rings"
@@ -45,7 +45,7 @@ const Hero = ({ heading, message }: { [key: string]: any }) => {
                                     loading="lazy"
                                     placeholder="blur"
                                     // style={imageStyle1}
-                                    className="rounded-2xl object-cover md:h-full md:max-h-[600] md:w-auto"
+                                    className="rounded-2xl object-cover md:h-full md:max-h-[600px] md:w-auto"
                                     blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQEA8ADwAAD/4QCCRXhpZgAATU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAABJADAAIAAAAUAAAAUJAEAAIAAAAUAAAAZJKRAAIAAAADMDYAAJKSAAIAAAADMDYAAAAAAAAyMDI0OjEyOjAyIDEyOjAyOjA4ADIwMjQ6MTI6MDIgMTI6MDI6MDgAAAD/4QGwaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wLwA8P3hwYWNrZXQgYmVnaW49J++7vycgaWQ9J1c1TTBNcENlaGlIenJlU3pOVGN6a2M5ZCc/Pg0KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyI+PHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj48cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0idXVpZDpmYWY1YmRkNS1iYTNkLTExZGEtYWQzMS1kMzNkNzUxODJmMWIiIHhtbG5zOmV4aWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20vZXhpZi8xLjAvIj48ZXhpZjpEYXRlVGltZU9yaWdpbmFsPjIwMjQtMTItMDJUMTI6MDI6MDguMDYwPC9leGlmOkRhdGVUaW1lT3JpZ2luYWw+PC9yZGY6RGVzY3JpcHRpb24+PC9yZGY6UkRGPjwveDp4bXBtZXRhPg0KPD94cGFja2V0IGVuZD0ndyc/Pv/bAEMAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/bAEMBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAf/AABEIAAoACgMBIgACEQEDEQH/xAAfAAABBQEBAQEBAQAAAAAAAAAAAQIDBAUGBwgJCgv/xAC1EAACAQMDAgQDBQUEBAAAAX0BAgMABBEFEiExQQYTUWEHInEUMoGRoQgjQrHBFVLR8CQzYnKCCQoWFxgZGiUmJygpKjQ1Njc4OTpDREVGR0hJSlNUVVZXWFlaY2RlZmdoaWpzdHV2d3h5eoOEhYaHiImKkpOUlZaXmJmaoqOkpaanqKmqsrO0tba3uLm6wsPExcbHyMnK0tPU1dbX2Nna4eLj5OXm5+jp6vHy8/T19vf4+fr/xAAfAQADAQEBAQEBAQEBAAAAAAAAAQIDBAUGBwgJCgv/xAC1EQACAQIEBAMEBwUEBAABAncAAQIDEQQFITEGEkFRB2FxEyIygQgUQpGhscEJIzNS8BVictEKFiQ04SXxFxgZGiYnKCkqNTY3ODk6Q0RFRkdISUpTVFVWV1hZWmNkZWZnaGlqc3R1dnd4eXqCg4SFhoeIiYqSk5SVlpeYmZqio6Slpqeoqaqys7S1tre4ubrCw8TFxsfIycrS09TV1tfY2dri4+Tl5ufo6ery8/T19vf4+fr/2gAMAwEAAhEDEQA/AO98Df8ABXzRvh9omm+XpHjWGDx94l0zVfij8ZPC1npd5pmh33hHUbaDxlJN/ZeleIPCJsb/AMK+Hru407Q9Q0S1uo73xFNr1nrAt9VtHuvZJv8Ag4p+FlhLLYr8ObjVVspHtF1S/wDEXiSyvtSFsxhF/e2dj8KNRsrS7vAn2i5trPUL+1gmkeK3vLqJEnfyXUoIJNNu4XhieKRWSSJ40aN0KYKuhBVlIJBUgggnI5NeCzeFPC3my/8AFNaB/rH/AOYPp394/wDTtX8fYLxcx+ZRnKtTz2nKnDD0YyocTcknRw6nRwtFylk9RqlhsL7LD0oRsuWkm7rljDwMF4mLD0fYUuGModOFfE4lqu5VW8RjqlPEYuqpxpUqrdfEQlVcatStyynJwcalSvUrf//Z"
                                     unoptimized
                                 />

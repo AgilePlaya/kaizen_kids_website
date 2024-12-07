@@ -8,7 +8,6 @@ import Features from "@/components/Features";
 import CallAction from "@/components/CallAction";
 import Image from "next/image";
 import Head from "next/head";
-import ImImg1 from "../../public/TP_LR_DSC2522.jpg";
 
 const imageStyle1 = {
     borderRadius: "50%",

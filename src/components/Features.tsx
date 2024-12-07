@@ -48,35 +48,20 @@ const featureList = [
         name: "Music and Dance",
     },
     {
-        text: "Unleashing creativity with colors, shapes, and craft projects.",
-        imageSrc: craftLogo.src,
-        name: "Arts and Crafts",
-    },
-    {
         text: "Ensuring safety and peace of mind with 24/7 CCTV monitoring.",
         imageSrc: cctvLogo.src,
         name: "CCTV Coverage",
+    },
+    {
+        text: "Unleashing creativity with colors, shapes, and craft projects.",
+        imageSrc: craftLogo.src,
+        name: "Arts and Crafts",
     },
 ];
 
 const firstColumn = featureList.slice(0, 3);
 const secondColumn = featureList.slice(3, 6);
 const thirdColumn = featureList.slice(6, 9);
-
-// const FeaturesColumn = (props: { featureEntries: typeof featureList }) => {
-//     <div className="flex flex-col gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_25%,black_75%,transparent)]">
-//         {/* Mobile View */}
-//         {props.featureEntries.map(({ text, imageSrc, name }) => (
-//             <div className="card">
-//                 <div className="font-bold text-xl text-center">{name}</div>
-//                 <div className="flex items-center gap-2 mt-5">
-//                     <Image src={imageSrc} width={80} height={80} alt={name} className="p-2 bg-gray-300 rounded-xl h-20 w-20" />
-//                     <div className="font-medium pl-5">{text}</div>
-//                 </div>
-//             </div>
-//         ))}
-//     </div>;
-// };
 
 const FeaturesColumn: React.FC<{ className?: string; featureEntries: typeof featureList }> = ({ className, featureEntries }) => {
     return (
