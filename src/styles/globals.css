@@ -40,15 +40,15 @@
     }
 
     .section-heading {
-        @apply max-w-[540px] mx-auto;
+        @apply max-w-[540px] mx-auto pointer-events-none;
     }
 
     .section-title {
-        @apply text-center text-3xl md:text-4xl font-extrabold bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text;
+        @apply text-center text-3xl md:text-4xl font-extrabold bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none;
     }
 
     .section-description {
-        @apply text-center text-base md:text-lg text-[#1d1004];
+        @apply text-center text-base md:text-lg text-[#1d1004] pointer-events-none;
     }
 
     .card {

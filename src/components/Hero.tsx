@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import ImImg1 from "../../public/TP_LR_DSC2522.jpg";
+import { FaArrowRight } from "react-icons/fa";
 
 const Hero = ({ heading, message }: { [key: string]: any }) => {
     return (
@@ -19,14 +20,20 @@ const Hero = ({ heading, message }: { [key: string]: any }) => {
                     <div>
                         <div className="md:flex items-center">
                             <div className="md:max-w-[420] md:min-w-[540] md:pr-10">
+                                <div className="flex">
+                                    <div className="tag pointer-events-none">Join Us Now</div>
+                                </div>
                                 {/* <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">Version 2.0 is here</div> */}
-                                <h1 className="text-4xl md:text-[60px] md:leading-[80px] font-extrabold bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text">
+                                <h1 className="text-4xl md:text-[60px] md:leading-[80px] font-extrabold bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
                                     {heading}
                                 </h1>
-                                <p className="text-base md:text-lg text-[#010D3E] mt-6">{message}</p>
+                                <p className="text-base md:text-lg text-[#010D3E] mt-6 pointer-events-none">{message}</p>
                                 <div className="flex gap-2 items-center mt-[30]">
-                                    <button className="btn btn-border">Get details</button>
                                     <button className="btn btn-primary">Apply Now</button>
+                                    <button className="btn btn-text">
+                                        <span>Learn More</span>
+                                        <FaArrowRight className="ml-2 h-4 w-4" />
+                                    </button>
                                 </div>
                             </div>
                             <div className="flex mt-16 md:mt-0 md:max-h-[648] md:flex-1 justify-center md:justify-end relative">
