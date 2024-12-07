@@ -15,8 +15,10 @@ const anim = (variants: { [key: string]: any }) => {
 
 const routes = {
     "/": "Home",
+    "/home": "Home",
     "/about": "About",
     "/apply": "Application",
+    "/contact": "Contact",
 };
 
 export default function TransitionPage({ children }: { [key: string]: any }) {
