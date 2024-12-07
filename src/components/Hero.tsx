@@ -37,7 +37,7 @@ const Hero = ({ heading, message }: { [key: string]: any }) => {
                                 <h1 className="text-4xl md:text-[60px] md:leading-[80px] font-extrabold bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
                                     {heading}
                                 </h1>
-                                <p className="text-base md:text-lg text-[#010D3E] mt-6 pointer-events-none">{message}</p>
+                                <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">{message}</p>
                                 <div className="flex gap-2 items-center mt-[30px]">
                                     <button className="btn btn-primary">Apply Now</button>
                                     <button className="btn btn-text">
