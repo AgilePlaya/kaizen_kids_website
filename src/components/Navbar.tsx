@@ -44,7 +44,7 @@ const Navbar = () => {
                     className="max-w-[1240px] m-auto flex justify-between items-center px-4 text-white rounded-lg ease-in duration-300 navbar-extra-style"
                 >
                     <Link href="/">
-                        <Image src={ImImg2} width="240" height="80" alt="/" className="mt-[-10]" loading="eager" unoptimized />
+                        <Image src={ImImg2} width="240" height="80" alt="/" className="mt-[-10px]" loading="eager" unoptimized />
                         {/* <h1 style={{color: `${textColor}`}} className='font-bold text-3xl'>KaizenKids</h1> */}
                     </Link>
 

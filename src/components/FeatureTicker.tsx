@@ -35,6 +35,60 @@ const FeatureTicker = () => {
                             <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={digitalLogo} alt="Digital logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={libraryLogo} alt="Library logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={skillsLogo} alt="Skills logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={digitalLogo} alt="Digital logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={libraryLogo} alt="Library logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={skillsLogo} alt="Skills logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={digitalLogo} alt="Digital logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={libraryLogo} alt="Library logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={skillsLogo} alt="Skills logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={digitalLogo} alt="Digital logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={libraryLogo} alt="Library logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={skillsLogo} alt="Skills logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={digitalLogo} alt="Digital logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={libraryLogo} alt="Library logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={skillsLogo} alt="Skills logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={digitalLogo} alt="Digital logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={libraryLogo} alt="Library logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={skillsLogo} alt="Skills logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
+                            <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
                         </div>
                     </div>
                 </div>
