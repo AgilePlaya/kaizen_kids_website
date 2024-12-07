@@ -1,9 +1,10 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import Slider from "@/components/Slider";
-import { SliderData } from "@/components/SliderData";
 import TransitionPage from "@/components/transition";
+import FeatureTicker from "@/components/FeatureTicker";
+import CallAction from "@/components/CallAction";
+import Features from "@/components/Features";
 import Image from "next/image";
 import Head from "next/head";
 
@@ -30,9 +31,11 @@ export default function Home() {
                 <Navbar />
                 <Hero
                     heading="Landing Area"
-                    message="Our students will be confident speakers, respectful listeners, creative problem solvers and experiential learners. They will also show team work as part of their holistic development."
+                    message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum libero, quae omnis assumenda deleniti. Accusamus natus temporibus ratione perspiciatis quam harum beatae. Similique dolores delectus, quidem saepe magni dolor?"
                 />
-                <Slider slides={SliderData} />
+                <FeatureTicker />
+                <Features />
+                <CallAction />
                 {/* <div>
 
                 </div> */}

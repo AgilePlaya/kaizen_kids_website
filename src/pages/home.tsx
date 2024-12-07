@@ -24,7 +24,6 @@ export default function Home() {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <TransitionPage>
-                {/* <Banner /> */}
                 <Navbar />
                 <Hero heading="Landing Area" message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum libero, quae omnis assumenda deleniti. Accusamus natus temporibus ratione perspiciatis quam harum beatae. Similique dolores delectus, quidem saepe magni dolor?" />
                 <FeatureTicker />
