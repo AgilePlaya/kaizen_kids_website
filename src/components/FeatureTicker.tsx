@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import activityLogo from "../../public/icons/activity-learning.png";
 import appLogo from "../../public/icons/app-to-track-learning.png";
@@ -9,6 +11,7 @@ import musicLogo from "../../public/icons/music-dance.png";
 import craftLogo from "../../public/icons/paper-crafts.png";
 import vanLogo from "../../public/icons/school-van.png";
 import Image from "next/image";
+import { motion, useScroll, useTransform } from "framer-motion";
 
 const FeatureTicker = () => {
     return (
@@ -16,7 +19,18 @@ const FeatureTicker = () => {
             <div className=" py-8 bg-white w-full m-0">
                 <div className="">
                     <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
-                        <div className="flex gap-12 flex-none">
+                        <motion.div
+                            className="flex gap-12 pr-12 flex-none"
+                            animate={{
+                                translateX: "-50%",
+                            }}
+                            transition={{
+                                duration: 30,
+                                repeat: Infinity,
+                                repeatType: "loop",
+                                ease: "linear",
+                            }}
+                        >
                             <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
@@ -26,6 +40,7 @@ const FeatureTicker = () => {
                             <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+
                             <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
@@ -35,6 +50,7 @@ const FeatureTicker = () => {
                             <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+
                             <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
@@ -44,6 +60,7 @@ const FeatureTicker = () => {
                             <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+
                             <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
@@ -53,6 +70,7 @@ const FeatureTicker = () => {
                             <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+
                             <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
@@ -62,6 +80,7 @@ const FeatureTicker = () => {
                             <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+
                             <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
@@ -71,6 +90,7 @@ const FeatureTicker = () => {
                             <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+
                             <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
@@ -80,6 +100,7 @@ const FeatureTicker = () => {
                             <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
+
                             <Image className="feature-ticker-image" loading="lazy" src={activityLogo} alt="Activity logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={appLogo} alt="App logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={cctvLogo} alt="CCTV logo" />
@@ -89,7 +110,7 @@ const FeatureTicker = () => {
                             <Image className="feature-ticker-image" loading="lazy" src={musicLogo} alt="Music logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={craftLogo} alt="Crafts logo" />
                             <Image className="feature-ticker-image" loading="lazy" src={vanLogo} alt="Van logo" />
-                        </div>
+                        </motion.div>
                     </div>
                 </div>
             </div>

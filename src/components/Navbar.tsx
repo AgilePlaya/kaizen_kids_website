@@ -2,9 +2,9 @@ import Link from "next/link";
 import Image from "next/image";
 import React, { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
-import { BsWindowSidebar } from "react-icons/bs";
 import ImImg1 from "../../public/favicon-192x192.png";
 import ImImg2 from "../../public/web-logo-text-nav-720x240.png";
+import { motion } from "framer-motion";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);
@@ -18,7 +18,7 @@ const Navbar = () => {
     useEffect(() => {
         const changeColor = () => {
             if (window.scrollY >= 15) {
-                setColor("#ffffff80");
+                setColor("#efefef80");
                 setBoxShadow("rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset");
             } else {
                 setColor("transparent");
@@ -31,11 +31,22 @@ const Navbar = () => {
     return (
         // <div className="">
         <>
-            <div className="left-0 top-0 w-full py-0 px-10 bg-orange-200 overflow-hidden ">
-                <div className="max-w-[1240px] m-auto text-sm overflow-hidden text-nowrap [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-                    Admissions Open {" \u2022 "} Admissions open till Class 2 {" \u2022 "} Contact Us for more info on class timings and batches {" \u2022 "}{" "}
-                    Admissions Open {" \u2022 "} Admissions open till Class 2 {" \u2022 "} Contact Us for more info on class timings and batches {" \u2022 "}{" "}
-                    Admissions Open {" \u2022 "} Admissions open till Class 2 {" \u2022 "} Contact Us for more info on class timings and batches
+            <div className="left-0 top-0 w-full py-0 px-0 bg-orange-200 overflow-hidden ">
+                <div className="relative w-[100vw] max-w-full text-sm overflow-hidden text-nowrap [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                    <motion.div
+                        className="text-center"
+                        // animate={{
+                        //     translateX: [0, "-50%"],
+                        // }}
+                        // transition={{
+                        //     duration: 5,
+                        //     repeat: Infinity,
+                        //     repeatType: "loop",
+                        //     ease: "linear",
+                        // }}
+                    >
+                        Admissions Open {" \u2022 "} Admissions open till Class 2 {" \u2022 "} Contact Us for more info on class timings and batches
+                    </motion.div>
                 </div>
             </div>
             <div className="sticky left-0 top-0 w-full py-4 px-10 z-10">
