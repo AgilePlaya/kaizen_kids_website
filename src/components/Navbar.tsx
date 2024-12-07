@@ -18,7 +18,7 @@ const Navbar = () => {
     useEffect(() => {
         const changeColor = () => {
             if (window.scrollY >= 9) {
-                setColor("#efefef");
+                setColor("#ffffffa0");
                 setBoxShadow("rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset");
             } else {
                 setColor("transparent");
@@ -30,27 +30,27 @@ const Navbar = () => {
 
     return (
         // <div className="">
-        <div className="fixed left-0 top-0 w-full py-4 px-10 z-10">
+        <div className="sticky left-0 top-0 w-full py-4 px-10 z-10">
             <div
                 style={{ backgroundColor: `${color}`, boxShadow: `${boxShadow}` }}
                 className="max-w-[1240px] m-auto flex justify-between items-center px-4 text-white rounded-lg ease-in duration-300 navbar-extra-style"
             >
                 <Link href="/">
-                    <Image src={ImImg2} width="240" height="80" alt="/" className="mt-[-10]" unoptimized />
+                    <Image src={ImImg2} width="240" height="80" alt="/" className="mt-[-10]" loading="eager" unoptimized />
                     {/* <h1 style={{color: `${textColor}`}} className='font-bold text-3xl'>KaizenKids</h1> */}
                 </Link>
 
                 <ul className="hidden text-black sm:flex">
-                    <li className="m-2 p-2 font-semibold hover-button rounded-md ease-in-out duration-500">
+                    <li className="m-1 p-2 btn btn-text">
                         <Link className="noselect" href="/">Home</Link>
                     </li>
-                    <li className="m-2 p-2 font-semibold hover-button rounded-md ease-in-out duration-500">
+                    <li className="m-1 p-2 btn btn-text">
                         <Link className="noselect" href="/about">About</Link>
                     </li>
-                    <li className="m-2 p-2 font-semibold hover-button rounded-md ease-in-out duration-500">
+                    <li className="m-1 p-2 btn btn-text">
                         <Link className="noselect" href="/contact">Contact</Link>
                     </li>
-                    <li className="m-2 p-2 font-bold hover-button rounded-md ease-in-out duration-500">
+                    <li className="m-1 p-2 btn btn-primary">
                         <Link className="noselect" href="/apply">Apply Now</Link>
                     </li>
                 </ul>

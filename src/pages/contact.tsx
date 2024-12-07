@@ -14,7 +14,7 @@ export default function Contact() {
             </Head>
             <TransitionPage>
                 <Navbar />
-                <div className="template-bg" />
+                <div className="template-bg-light" />
                 <Footer />
             </TransitionPage>
         </>
