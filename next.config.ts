@@ -8,9 +8,6 @@ const nextConfig: NextConfig = {
   assetPrefix: './',
   images: {
     unoptimized: true,
-    remotePatterns: [{
-      'hostname': 'images.unsplash.com',
-    }]
   }
 };
 

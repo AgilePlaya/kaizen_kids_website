@@ -5,8 +5,11 @@ import Image from "next/image";
 import ImImg1 from "@/../public/media/hero_media_resized.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { motion, useScroll, useTransform } from "framer-motion";
+import AnimatedBorderButton from "./AnimatedBorderButton";
+import AnimatedButton from "./AnimatedButton";
+import Link from "next/link";
 
-const Hero = ({ heading, message }: { [key: string]: any }) => {
+const Hero = ({ tag, heading, message }: { [key: string]: any }) => {
     const heroRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: heroRef,
@@ -31,7 +34,7 @@ const Hero = ({ heading, message }: { [key: string]: any }) => {
                         <div className="md:flex items-center">
                             <div className="md:max-w-[420px] md:min-w-[540px] md:pr-10">
                                 <div className="flex">
-                                    <div className="tag pointer-events-none">Join Us Now</div>
+                                    <div className="tag pointer-events-none">{tag}</div>
                                 </div>
                                 {/* <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">Version 2.0 is here</div> */}
                                 <h1 className="text-4xl md:text-[60px] md:leading-[80px] font-extrabold bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
@@ -39,11 +42,11 @@ const Hero = ({ heading, message }: { [key: string]: any }) => {
                                 </h1>
                                 <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">{message}</p>
                                 <div className="flex gap-2 items-center mt-[30px]">
-                                    <button className="btn btn-primary">Apply Now</button>
-                                    <button className="btn btn-text">
+                                    <AnimatedBorderButton text="Apply" link="/apply"/>
+                                    <Link className="btn btn-text" href="/about">
                                         <span>Learn More</span>
                                         <FaArrowRight className="ml-2 h-4 w-4" />
-                                    </button>
+                                    </Link>
                                 </div>
                             </div>
                             <div className="flex mt-16 md:mt-0 md:max-h-[648px] md:flex-1 justify-center md:justify-end m-auto relative">

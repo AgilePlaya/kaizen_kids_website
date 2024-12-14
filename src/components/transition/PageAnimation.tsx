@@ -19,6 +19,7 @@ const routes = {
     "/about": "About",
     "/apply": "Application",
     "/contact": "Contact",
+    "/staff": "Staff"
 };
 
 export default function TransitionPage({ children }: { [key: string]: any }) {
