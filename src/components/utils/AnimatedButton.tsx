@@ -16,7 +16,7 @@ const AnimatedButton = ({ text, link }: { [key: string]: any }) => {
     return (
         <>
             <div ref={scope} className="relative">
-                <Link href={link} onClick={onButtonClick} className="btn btn-text">
+                <Link href={link} onClick={onButtonClick} className="btn btn-text" scroll={false}>
                     <span className="sr-only">{text}</span>
                     <span className="flex items-center justify-center h-8 overflow-hidden" aria-hidden>
                         {text.split("").map((letter: string, index: any) => (

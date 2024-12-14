@@ -50,7 +50,7 @@ const AnimatedBorderButton = ({ text, link }: { [key: string]: any }) => {
             },
         ]);
 
-        console.log(sparklesReset, "Check")
+        console.log(sparklesReset, "Check");
         animate([
             ...(sparklesReset as []),
             [".btn-letter", { y: -27 }, { duration: 0.2, delay: stagger(0.05) }],
@@ -65,7 +65,7 @@ const AnimatedBorderButton = ({ text, link }: { [key: string]: any }) => {
     return (
         <>
             <div ref={scope} className="relative">
-                <Link href={link} onClick={onButtonClick} className="btn btn-primary btn-anim-border ">
+                <Link href={link} onClick={onButtonClick} className="btn btn-primary btn-anim-border " scroll={false}>
                     <span className="sr-only">{text}</span>
                     <span className="flex items-center justify-center h-8 overflow-hidden" aria-hidden>
                         {text.split("").map((letter: string, index: any) => (

@@ -17,7 +17,7 @@ const CallAction = () => {
                     </div>
                     <div className="flex gap-2 mt-10 justify-center">
                         <AnimatedBorderButton text="Apply" link="/apply" />
-                        <Link className="btn btn-text" href="/about">
+                        <Link className="btn btn-text" href="/about" scroll={false}>
                             <span>Learn More</span>
                             <FaArrowRight className="ml-2 h-4 w-4" />
                         </Link>

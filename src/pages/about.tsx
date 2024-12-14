@@ -6,10 +6,11 @@ import Head from "next/head";
 import React, { useRef } from "react";
 import ImImg1 from "@/../public/media/hero_media_resized.jpg";
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaArrowRight } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import Link from "next/link";
 import Image from "next/image";
 import TransitionPage from "@/components/transition/PageAnimation";
+import CallAction from "@/components/CallAction";
 
 const about = () => {
     const heroRef = useRef(null);
@@ -73,9 +74,9 @@ const about = () => {
                                     </p>
                                     <div className="flex gap-2 items-center mt-[30px]">
                                         <AnimatedBorderButton text="Apply" link="/apply" />
-                                        <Link className="btn btn-text" href="/staff">
-                                            <span>About the staff</span>
-                                            <FaArrowRight className="ml-2 h-4 w-4" />
+                                        <Link className="btn btn-text" href="/" scroll={false}>
+                                            <FaArrowLeft className="mr-2 h-4 w-4" />
+                                            <span>Back home</span>
                                         </Link>
                                     </div>
                                 </div>
@@ -114,6 +115,31 @@ const about = () => {
                         </div>
                     </div>
                 </section>
+
+                <section className="py-24 bg-white ">
+                    <div>Educators section here</div>
+                    {/* <div className="container">
+                        <Image
+                            src={ImImg1}
+                            alt="Students of Kaizen Kids playing with some rings"
+                            width="450"
+                            height="600"
+                            loading="lazy"
+                            className="clip-svg"
+                            // style={imageStyle1}
+                            unoptimized
+                        />
+                    </div>
+                    <svg>
+                        <clipPath id="mask" clipPathUnits="objectBoundingBox">
+                            <path
+                                d="M0.266,-0.46 C0.342,-0.419,0.401,-0.344,0.438,-0.261 C0.474,-0.178,0.489,-0.089,0.493,0.002 C0.497,0.094,0.49,0.188,0.453,0.268 C0.414,0.348,0.345,0.414,0.265,0.452 C0.184,0.49,0.092,0.498,0.002,0.495 C-0.088,0.491,-0.176,0.475,-0.254,0.436 C-0.331,0.397,-0.399,0.334,-0.443,0.258 C-0.486,0.181,-0.505,0.09,-0.506,-0.001 C-0.507,-0.092,-0.492,-0.185,-0.45,-0.264 C-0.408,-0.342,-0.339,-0.407,-0.26,-0.447 C-0.181,-0.486,-0.09,-0.5,0.002,-0.504 C0.094,-0.507,0.189,-0.501,0.266,-0.46"
+                                transform="translate(0.5 0.5)"
+                            />
+                        </clipPath>
+                    </svg> */}
+                </section>
+                <CallAction />
                 <Footer />
             </TransitionPage>
         </>
