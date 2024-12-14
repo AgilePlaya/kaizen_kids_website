@@ -51,9 +51,6 @@
             background: #fad8b0;
             border-radius: 5px;
         }
-        &::after:hover {
-            background: #e7a152;
-        }
     }
 
     .btn {

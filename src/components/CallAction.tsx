@@ -1,5 +1,7 @@
+import Link from "next/link";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
+import AnimatedBorderButton from "./utils/AnimatedBorderButton";
 
 const CallAction = () => {
     return (
@@ -14,11 +16,11 @@ const CallAction = () => {
                         </p>
                     </div>
                     <div className="flex gap-2 mt-10 justify-center">
-                        <button className="btn btn-primary">Apply Now</button>
-                        <button className="btn btn-text">
+                        <AnimatedBorderButton text="Apply" link="/apply" />
+                        <Link className="btn btn-text" href="/about">
                             <span>Learn More</span>
                             <FaArrowRight className="ml-2 h-4 w-4" />
-                        </button>
+                        </Link>
                     </div>
                 </div>
             </section>

@@ -1,4 +1,4 @@
-import AnimatedBorderButton from "@/components/AnimatedBorderButton";
+import AnimatedBorderButton from "@/components/utils/AnimatedBorderButton";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
