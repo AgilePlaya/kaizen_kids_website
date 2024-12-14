@@ -1,6 +1,6 @@
 {
   "name": "kaizen_kids",
-  "version": "0.5.6",
+  "version": "0.6.1",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",

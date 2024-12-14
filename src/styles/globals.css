@@ -3,20 +3,74 @@
 @tailwind utilities;
 
 @layer components {
+    @keyframes rotate {
+        100% {
+            transform: rotate(1turn);
+        }
+    }
+
+    .btn-anim-border {
+        position: relative;
+        z-index: 0;
+        /* width: 400px;
+        height: 300px; */
+        border-radius: 10px;
+        overflow: hidden;
+        /* padding: 2rem; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* font-family: sans-serif; */
+        font-weight: bold;
+
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -2;
+            left: -150%;
+            top: -200%;
+            width: 400%;
+            height: 500%;
+            background-repeat: no-repeat;
+            background-size: 50% 50%, 50% 50%;
+            background-position: 0 0, 100% 0, 100% 100%, 0 100%;
+            background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33),
+                linear-gradient(#377af5, #377af5);
+            animation: rotate 4s linear infinite;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            left: 6px;
+            top: 6px;
+            width: calc(100% - 12px);
+            height: calc(100% - 12px);
+            background: #fad8b0;
+            border-radius: 5px;
+        }
+        &::after:hover {
+            background: #e7a152;
+        }
+    }
+
     .btn {
-        @apply px-4 py-2 text-base sm:text-lg md:text-xl rounded-lg font-medium inline-flex items-center justify-center ease-in-out duration-500 text-nowrap;
+        @apply px-4 py-2 text-base leading-6 sm:text-lg md:text-xl rounded-xl font-medium ease-in-out duration-500 text-nowrap transition-colors z-[5];
     }
 
     .btn-primary {
-        @apply font-semibold border-2 border-black bg-black text-white;
+        /* @apply font-semibold border-2 border-black bg-black text-white; */
+        @apply font-semibold border-2 text-black;
     }
 
     .btn-primary:hover {
-        @apply border-2 border-black bg-[#e7a152] text-black ease-in-out duration-500;
+        @apply border-2 border-black text-black ease-in-out duration-500;
     }
 
     .btn-text {
-        @apply border-2 border-transparent bg-transparent text-black;
+        @apply inline-flex items-center justify-center border-2 border-transparent bg-transparent text-black;
     }
 
     .btn-text:hover {

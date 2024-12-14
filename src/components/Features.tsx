@@ -13,46 +13,55 @@ import { twMerge } from "tailwind-merge";
 
 const featureList = [
     {
+        key: 0,
         text: "Engaging little minds through hands-on fun and exploration",
         imageSrc: activityLogo.src,
         name: "Activity Based Learning",
     },
     {
+        key: 1,
         text: "Stay connected to your child's daily adventures with our handy app.",
         imageSrc: appLogo.src,
         name: "App to Track Child's Activity",
     },
     {
+        key: 2,
         text: "Safe and reliable transport for your little ones’ daily journey.",
         imageSrc: vanLogo.src,
         name: "School Van",
     },
     {
+        key: 3,
         text: "Bridging the future with interactive and tech-savvy learning experiences.",
         imageSrc: digitalLogo.src,
         name: "Digital Classroom",
     },
     {
+        key: 4,
         text: "Sparking curiosity and imagination with a treasure trove of books.",
         imageSrc: libraryLogo.src,
         name: "Library",
     },
     {
+        key: 5,
         text: "Boosting coordination and confidence through playful movement.",
         imageSrc: skillsLogo.src,
         name: "Motor Skills Development",
     },
     {
+        key: 6,
         text: "Grooving to the rhythm and melodies for joyful expression.",
         imageSrc: musicLogo.src,
         name: "Music and Dance",
     },
     {
+        key: 7,
         text: "Ensuring safety and peace of mind with 24/7 CCTV monitoring.",
         imageSrc: cctvLogo.src,
         name: "CCTV Coverage",
     },
     {
+        key: 8,
         text: "Unleashing creativity with colors, shapes, and craft projects.",
         imageSrc: craftLogo.src,
         name: "Arts and Crafts",
@@ -67,8 +76,8 @@ const FeaturesColumn: React.FC<{ className?: string; featureEntries: typeof feat
     return (
         <div className={twMerge("flex flex-col gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_80%,transparent)]", className)}>
             {/* Mobile View */}
-            {featureEntries.map(({ text, imageSrc, name }) => (
-                <div className="card">
+            {featureEntries.map(({ key, text, imageSrc, name }) => (
+                <div className="card" key={key}>
                     <div className="font-bold px-10 text-xl text-center">{name}</div>
                     <div className="flex items-center gap-2 mt-5">
                         <Image src={imageSrc} width={80} height={80} alt={name} className="p-2 bg-gray-300 rounded-xl h-20 w-20" />

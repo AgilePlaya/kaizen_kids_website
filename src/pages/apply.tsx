@@ -1,6 +1,6 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import TransitionPage from "@/components/transition";
+import TransitionPage from "@/components/transition/PageAnimation";
 import React from "react";
 
 const apply = () => {

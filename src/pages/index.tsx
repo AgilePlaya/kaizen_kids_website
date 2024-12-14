@@ -1,7 +1,7 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
-import TransitionPage from "@/components/transition";
+import TransitionPage from "@/components/transition/PageAnimation";
 import FeatureTicker from "@/components/FeatureTicker";
 import CallAction from "@/components/CallAction";
 import Features from "@/components/Features";
@@ -30,6 +30,7 @@ export default function Home() {
             <TransitionPage>
                 <Navbar />
                 <Hero
+                    tag="Join Us Now"
                     heading="Landing Area"
                     message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum libero, quae omnis assumenda deleniti. Accusamus natus temporibus ratione perspiciatis quam harum beatae. Similique dolores delectus, quidem saepe magni dolor?"
                 />
