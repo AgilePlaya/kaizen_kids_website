@@ -5,8 +5,8 @@ import Image from "next/image";
 import ImImg1 from "@/../public/media/hero_media_resized.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { motion, useScroll, useTransform } from "framer-motion";
-import AnimatedBorderButton from "./AnimatedBorderButton";
-import AnimatedButton from "./AnimatedButton";
+import AnimatedBorderButton from "./utils/AnimatedBorderButton";
+import AnimatedButton from "./utils/AnimatedButton";
 import Link from "next/link";
 
 const Hero = ({ tag, heading, message }: { [key: string]: any }) => {

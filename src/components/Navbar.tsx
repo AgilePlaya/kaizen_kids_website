@@ -5,8 +5,8 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import ImImg1 from "../../public/favicon-192x192.png";
 import ImImg2 from "../../public/web-logo-text-nav-720x240.png";
 import { motion } from "framer-motion";
-import AnimatedBorderButton from "./AnimatedBorderButton";
-import AnimatedButton from "./AnimatedButton";
+import AnimatedBorderButton from "./utils/AnimatedBorderButton";
+import AnimatedButton from "./utils/AnimatedButton";
 
 const Navbar = () => {
     const [nav, setNav] = useState(false);

@@ -6,7 +6,7 @@ const AnimatedButton = ({ text, link }: { [key: string]: any }) => {
     const [scope, animate] = useAnimate();
     const onButtonClick = () => {
         animate([
-            [".btn-letter", { y: -28 }, { duration: 0.2, delay: stagger(0.05) }],
+            [".btn-letter", { y: -27 }, { duration: 0.2, delay: stagger(0.05) }],
             ["button", { scale: 0.8 }, { duration: 0.15, at: "<" }],
             ["button", { scale: 1 }, { duration: 0.15 }],
             [".btn-letter", { y: 0 }, { duration: 0.00001 }],
@@ -22,7 +22,7 @@ const AnimatedButton = ({ text, link }: { [key: string]: any }) => {
                         {text.split("").map((letter: string, index: any) => (
                             <span
                                 data-letter={letter}
-                                className="btn-letter inline-block items-center justify-center leading-6 relative h-7 after:absolute after:left-0 after:h-7 after:top-full after:content-[attr(data-letter)]"
+                                className="btn-letter inline-block items-center justify-center leading-7 relative h-7 after:absolute after:left-0 after:h-7 after:top-full after:content-[attr(data-letter)]"
                                 key={`${letter}-${index}`}
                             >
                                 {letter}

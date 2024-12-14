@@ -1,6 +1,5 @@
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import Banner from "@/components/Banner";
 import Hero from "@/components/Hero";
 import FeatureTicker from "@/components/FeatureTicker";
 import TransitionPage from "@/components/transition/PageAnimation";
@@ -9,7 +8,7 @@ import CallAction from "@/components/CallAction";
 import Image from "next/image";
 import Head from "next/head";
 import ImImg1 from "@/../public/media/hero_media_resized.jpg";
-import AnimatedBorderButton from "@/components/AnimatedBorderButton";
+import AnimatedBorderButton from "@/components/utils/AnimatedBorderButton";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 import { useRef } from "react";
