@@ -19,7 +19,7 @@ const routes = {
     "/about": "About",
     "/apply": "Application",
     "/contact": "Contact",
-    "/staff": "Staff"
+    "/staff": "Staff",
 };
 
 export default function TransitionPage({ children }: { [key: string]: any }) {
@@ -104,6 +104,9 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
     const textanim = {
         initial: {
             opacity: 1,
+            window: {
+                scrollTo: 0,
+            },
         },
         enter: {
             opacity: 0,
@@ -127,6 +130,9 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
                 delay: 0.35,
                 ease: [0.16, 1, 0.3, 1],
             },
+            window: {
+                scrollTo: 0,
+            },
         },
     };
 
@@ -144,12 +150,14 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
         //   </motion.div>
         // </div>
         <div className="page curve">
-            <motion.p
-                {...anim(textanim)}
-                className="absolute top-[45%] left-[50%] text-center justify-center font-bold -translate-x-1/2 text-5xl xl:text-8xl text-white scroll-auto z-40"
-            >
-                {routes[router.route as keyof typeof routes]}
-            </motion.p>
+            <div className="h-full w-full flex overflow-hidden">
+                <motion.p
+                    {...anim(textanim)}
+                    className="fixed top-[45%] left-[50%] text-center justify-center font-bold -translate-x-1/2 text-5xl xl:text-8xl text-white z-40"
+                >
+                    {routes[router.route as keyof typeof routes]}
+                </motion.p>
+            </div>
             <div
                 style={{ opacity: dimensions.width > 0 ? 0 : 1 }}
                 className="w-full h-[calc(100vh+800px)] top-[-400px] left=0 fixed pointer-events-none bg-black z-[38]"

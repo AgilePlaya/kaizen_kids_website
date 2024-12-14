@@ -59,7 +59,7 @@ export default function Home() {
                                     </p>
                                     <div className="flex gap-2 items-center mt-[30px]">
                                         <AnimatedBorderButton text="Apply" link="/apply" />
-                                        <Link className="btn btn-text" href="/">
+                                        <Link className="btn btn-text" href="/" scroll={false}>
                                             <FaArrowLeft className="mr-2 h-4 w-4" />
                                             <span>Back home</span>
                                         </Link>

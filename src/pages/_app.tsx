@@ -8,22 +8,29 @@ import { AnimatePresence } from "framer-motion";
 import { Router } from "next/router";
 
 export default function App({ Component, pageProps, router }: AppProps) {
-  return (
-    <>
-      {/* <Navbar /> */}
-      <AnimatePresence mode="wait">
-        <Component key={router.route} {...pageProps} />
-      </AnimatePresence>
-      {/* <Footer /> */}
-      <Analytics
-        beforeSend={(event) => {
-          if (localStorage.getItem("va-disable")) {
-            return null;
-          }
-          return event;
-        }}
-      />
-      <SpeedInsights />
-    </>
-  );
+    return (
+        <>
+            {/* <Navbar /> */}
+            <AnimatePresence
+                mode="wait"
+                onExitComplete={() => {
+                    if (typeof window !== "undefined") {
+                        window.scrollTo({ top: 0 });
+                    }
+                }}
+            >
+                <Component key={router.route} {...pageProps} />
+            </AnimatePresence>
+            {/* <Footer /> */}
+            <Analytics
+                beforeSend={(event) => {
+                    if (localStorage.getItem("va-disable")) {
+                        return null;
+                    }
+                    return event;
+                }}
+            />
+            <SpeedInsights />
+        </>
+    );
 }

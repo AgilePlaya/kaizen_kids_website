@@ -21,7 +21,7 @@
         justify-content: center;
         align-items: center;
         /* font-family: sans-serif; */
-        font-weight: bold;
+        font-weight: bolder;
 
         &::before {
             content: "";
@@ -54,7 +54,7 @@
     }
 
     .btn {
-        @apply px-4 py-2 text-base leading-6 sm:text-lg md:text-xl rounded-xl font-medium ease-in-out duration-500 text-nowrap transition-colors z-[5];
+        @apply px-4 py-2 text-base leading-6 sm:text-lg lg:text-xl rounded-xl font-medium ease-in-out duration-500 text-nowrap transition-colors z-[5];
     }
 
     .btn-primary {
@@ -127,6 +127,10 @@ html {
 .navbar-extra-style {
     /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
     backdrop-filter: blur(8px);
+}
+
+.clip-svg {
+    clip-path: url(#mask);
 }
 
 .bg-svg {
