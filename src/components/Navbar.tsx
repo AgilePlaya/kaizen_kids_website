@@ -66,7 +66,7 @@ const Navbar = () => {
                             <AnimatedButton text="Home" link="/" />
                         </li>
                         <li className="m-[2px]">
-                            <AnimatedButton text="About" link="/about#top" />
+                            <AnimatedButton text="Program" link="/program#top" />
                         </li>
                         <li className="m-[2px]">
                             <AnimatedButton text="Contact" link="/contact" />
@@ -85,7 +85,7 @@ const Navbar = () => {
                         className={
                             nav
                                 ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#110801] text-center ease-in duration-300 scale-125 overflow-hidden"
-                                : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-2/3 h-screen bg-black/10 text-center ease-in duration-300 scale-125"
+                                : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-2/3 h-screen bg-black/0 text-center ease-in duration-300 scale-125"
                         }
                     >
                         <ul>
@@ -93,7 +93,7 @@ const Navbar = () => {
                                 <Link href="/" scroll={false}>Home</Link>
                             </li>
                             <li className="p-4 text-4xl hover:text-gray-500 ease-in duration-300">
-                                <Link href="/about" scroll={false}>About</Link>
+                                <Link href="/program" scroll={false}>Program</Link>
                             </li>
                             <li className="p-4 text-4xl hover:text-gray-500 ease-in duration-300">
                                 <Link href="/contact" scroll={false}>Contact</Link>

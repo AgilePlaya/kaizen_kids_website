@@ -50,7 +50,7 @@ const AnimatedBorderButton = ({ text, link }: { [key: string]: any }) => {
             },
         ]);
 
-        console.log(sparklesReset, "Check");
+        // console.log(sparklesReset, "Check");
         animate([
             ...(sparklesReset as []),
             [".btn-letter", { y: -27 }, { duration: 0.2, delay: stagger(0.05) }],
@@ -89,7 +89,7 @@ const AnimatedBorderButton = ({ text, link }: { [key: string]: any }) => {
                             viewBox="-4.79 -4.79 57.52 57.52"
                             xmlSpace="preserve"
                             stroke="#000000"
-                            stroke-width="1.8"
+                            strokeWidth="1.8"
                         >
                             <g id="SVGRepo_bgCarrier" strokeWidth="1"></g>
                             <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>

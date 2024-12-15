@@ -31,8 +31,8 @@ export default function Home() {
                 <Navbar />
                 <Hero
                     tag="Join Us Now"
-                    heading="Landing Area"
-                    message="Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum libero, quae omnis assumenda deleniti. Accusamus natus temporibus ratione perspiciatis quam harum beatae. Similique dolores delectus, quidem saepe magni dolor?"
+                    heading="Welcome to KaizenKids!!"
+                    message="At KaizenKids, we believe in nurturing young minds in a safe, joyful, and stimulating environment. Our goal is to create a foundation for lifelong learning and curiosity."
                 />
                 <FeatureTicker />
                 <Features />

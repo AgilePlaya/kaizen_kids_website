@@ -105,6 +105,13 @@
     .card {
         @apply p-8 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
     }
+
+    .card-shadow {
+        /* border-width: 1px;
+        border-color: rgb(34 34 34 / 0.1); */
+        /* box-shadow: rgba(240, 149, 46, 0.4) 2px 5px, rgba(240, 149, 46, 0.3) 4px 10px, rgba(240, 149, 46, 0.2) 6px 15px, rgba(240, 149, 46, 0.1) 8px 20px; */
+        box-shadow: rgba(240, 149, 46, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(156, 85, 26, 0.65) 0px -2px 6px 0px inset;
+    }
 }
 
 :root {

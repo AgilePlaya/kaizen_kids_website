@@ -16,7 +16,7 @@ const anim = (variants: { [key: string]: any }) => {
 const routes = {
     "/": "Home",
     "/home": "Home",
-    "/about": "About",
+    "/program": "Program",
     "/apply": "Application",
     "/contact": "Contact",
     "/staff": "Staff",
@@ -153,7 +153,7 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
             <div className="h-full w-full flex overflow-hidden">
                 <motion.p
                     {...anim(textanim)}
-                    className="fixed top-[45%] left-[50%] text-center justify-center font-bold -translate-x-1/2 text-5xl xl:text-8xl text-white z-40"
+                    className="fixed top-[45%] left-[50%] text-center justify-center font-bold -translate-x-1/2 text-5xl md:text-7xl lg:text-8xl text-white z-40"
                 >
                     {routes[router.route as keyof typeof routes]}
                 </motion.p>

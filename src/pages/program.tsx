@@ -11,6 +11,8 @@ import Link from "next/link";
 import Image from "next/image";
 import TransitionPage from "@/components/transition/PageAnimation";
 import CallAction from "@/components/CallAction";
+import Features from "@/components/Features";
+import FeatureTicker from "@/components/FeatureTicker";
 
 const about = () => {
     const heroRef = useRef(null);
@@ -23,7 +25,7 @@ const about = () => {
     return (
         <>
             <Head>
-                <title>KaizenKids: About</title>
+                <title>KaizenKids: Programs</title>
                 <meta name="description" content="KaizenKids website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
@@ -116,9 +118,10 @@ const about = () => {
                     </div>
                 </section>
 
-                <section className="py-24 bg-white ">
-                    <div>Educators section here</div>
-                    {/* <div className="container">
+                {/* <section className="py-24 bg-white ">
+                    <div>Kids time table here</div>
+                </section> */}
+                {/* <div className="container">
                         <Image
                             src={ImImg1}
                             alt="Students of Kaizen Kids playing with some rings"
@@ -138,7 +141,8 @@ const about = () => {
                             />
                         </clipPath>
                     </svg> */}
-                </section>
+                <FeatureTicker />
+                <Features />
                 <CallAction />
                 <Footer />
             </TransitionPage>

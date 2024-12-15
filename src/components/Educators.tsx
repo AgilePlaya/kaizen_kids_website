@@ -1,129 +1,155 @@
-import React from "react";
-import activityLogo from "../../public/icons/activity-learning.png";
-import appLogo from "../../public/icons/app-to-track-learning.png";
-import cctvLogo from "../../public/icons/cctv.png";
-import digitalLogo from "../../public/icons/digital-class.png";
-import libraryLogo from "../../public/icons/library-activity.png";
-import skillsLogo from "../../public/icons/motor-skills.png";
-import musicLogo from "../../public/icons/music-dance.png";
-import craftLogo from "../../public/icons/paper-crafts.png";
-import vanLogo from "../../public/icons/school-van.png";
-import { FeatureCard, FeatureTitle } from "./utils/FeatureUtils";
+import imgSuchi from "../../public/staff/KK_Suchi.jpg";
+import imgKavita from "../../public/staff/KK_Kavita.jpg";
+import imgMaya from "../../public/staff/KK_Maya.jpg";
+import imgSarita from "../../public/staff/KK_Sarita.jpg";
+import imgPinky from "../../public/staff/KK_Pinky.jpg";
+import imgVikash from "../../public/staff/KK_Vikash.jpg";
 
+import imgMale from "../../public/staff/placeholder_male.png";
+import imgFemale from "../../public/staff/placeholder_female.png";
+import imgPlaceM from "../../public/profile_male.png";
+import imgPlaceF from "../../public/profile_female.png";
+
+import React from "react";
 import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 
 const staffList = [
     {
         key: 0,
-        name: "Activity Based Learning",
-        title: "Engaging Learning Activities",
-        imageSrc: activityLogo.src,
+        name: "Suchismita Mukherjee",
+        title: "Principal",
+        imageSrc: imgSuchi.src,
+        placeholder: imgPlaceF.src,
         color: "#FFCC00",
     },
     {
         key: 1,
-        name: "App to Track Child's Activity",
-        title: "Child Activity Tracking App",
-        imageSrc: appLogo.src,
+        name: "Kavita Kumari",
+        title: "",
+        imageSrc: imgKavita.src,
+        placeholder: imgPlaceF.src,
         color: "#0099FF",
     },
     {
         key: 2,
-        name: "School Van",
-        title: "Safe School Transportation",
-        imageSrc: vanLogo.src,
+        name: "Maya Kumari",
+        title: "",
+        imageSrc: imgMaya.src,
+        placeholder: imgPlaceF.src,
         color: "#FF6600",
     },
     {
         key: 3,
-        name: "Digital Classroom",
-        title: "Tech-Enhanced Learning Space",
-        imageSrc: digitalLogo.src,
+        name: "Kajal Kumari",
+        title: "",
+        imageSrc: imgFemale.src,
+        placeholder: imgPlaceF.src,
         color: "#33CC33",
     },
     {
         key: 4,
-        name: "Library",
-        title: "Resourceful School Library",
-        imageSrc: libraryLogo.src,
+        name: "Sarita Kumari",
+        title: "",
+        imageSrc: imgSarita.src,
+        placeholder: imgPlaceF.src,
         color: "#800080",
     },
     {
         key: 5,
-        name: "Motor Skills Development",
-        title: "Building Motor Skills",
-        imageSrc: skillsLogo.src,
+        name: "Pinky Devi",
+        title: "",
+        imageSrc: imgPinky.src,
+        placeholder: imgPlaceF.src,
         color: "#FF3366",
     },
     {
         key: 6,
-        name: "Music and Dance",
-        title: "Creative Arts Programs",
-        imageSrc: musicLogo.src,
+        name: "Vikash Mahato",
+        title: "",
+        imageSrc: imgVikash.src,
+        placeholder: imgPlaceM.src,
         color: "#FF0066",
-    },
-    {
-        key: 7,
-        name: "CCTV Coverage",
-        title: "Enhanced School Security",
-        imageSrc: cctvLogo.src,
-        color: "#333333",
-    },
-    {
-        key: 8,
-        name: "Arts and Crafts",
-        title: "Creative Craft Activities",
-        imageSrc: craftLogo.src,
-        color: "#FF9900",
     },
 ];
 
-const firstColumn = staffList.slice(0, 3);
-const secondColumn = staffList.slice(3, 6);
+function partition(array: typeof staffList, filter: any) {
+    let pass: any[] = [],
+        fail: any[] = [];
+    array.forEach((key, idx, arr) => (filter(key, idx, arr) ? pass : fail).push(key));
+    return [pass, fail];
+}
 
-const mobileColumn = staffList.slice(0, 9);
+const [firstColumn, secondColumn] = partition(staffList.slice(1, 7), (e: any) => e.key % 2 == 1);
 
-const FeaturesColumn: React.FC<{ className?: string; featureEntries: typeof staffList }> = ({ className, featureEntries }) => {
+//Output
+// console.log(firstColumn);
+// console.log(secondColumn);
+
+// const firstColumn = staffList.slice(1, 4);
+// const secondColumn = staffList.slice(4, 7);
+
+const mobileColumn = staffList.slice(1, 7);
+
+const EducatorsColumn: React.FC<{ className?: string; staffEntries: typeof staffList }> = ({ className, staffEntries }) => {
     return (
-        <div className={twMerge("flex flex-col gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_80%,transparent)]", className)}>
-            {/* Mobile View */}
-            {featureEntries.map(({ key, title, imageSrc, name }) => (
-                <div className="card" key={key}>
-                    <div className="font-bold px-10 text-xl text-center">{name}</div>
-                    <div className="flex items-center gap-2 mt-5">
-                        <Image src={imageSrc} width={80} height={80} alt={name} className="p-2 bg-gray-300 rounded-xl h-20 w-20" />
-                        <div className="font-medium pl-5">{title}</div>
+        <div className="flex flex-col gap-6 mt-10">
+            {staffEntries.map(({ key, imageSrc, placeholder, name }) => (
+                <>
+                    {/* <StaffCard key={`staff-card-${key}`} image={imageSrc} name={name} placeholder={placeholder} /> */}
+                    <div
+                        className={twMerge("p-6 flex sm:flex-col backdrop-blur-xl rounded-3xl bg-white/20 w-full max-w-md transition-all", className)}
+                        key={`staff-${key}`}
+                    >
+                        <div key={`staff-card-${key}`} className="flex items-center gap-2">
+                            <Image
+                                key={`staff-card-img-${key}`}
+                                src={imageSrc}
+                                width={80}
+                                height={80}
+                                alt={name}
+                                className="p-1 bg-[#d47426] rounded-full h-40 w-40 pointer-events-none"
+                            />
+                            <div
+                                key={`staffcard-name-${key}`}
+                                className="text-2xl md:text-3xl md:px-2 lg:text-4xl lg:px-4 transition-all font-black bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none"
+                            >
+                                {name}
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </>
             ))}
         </div>
     );
 };
 
-const Features = () => {
+const Educators = () => {
     return (
         <>
-            <section className="py-24 bg-white">
-                <div className="container px-10 max-w-[1080px] m-auto">
+            <section className="py-16 md:py-24 lg:py-32 transition-all bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#fcbe68,#fef5ea_66%)]">
+                <div className="px-10 container max-w-[1080px] m-auto ">
                     <div className="section-heading">
                         <div className="flex justify-center">
-                            <div className="tag">Features</div>
+                            <div className="tag">Our Educators</div>
                         </div>
-                        <h2 className="section-title mt-5">What Sets Us Apart</h2>
-                        <p className="section-description mt-5">
-                            At Kaizen Kids, we believe in offering a holistic environment that nurtures every aspect of your child's growth. Our facilities and
-                            innovative programs ensure that learning is not just educational, but also fun and engaging.
+                        <h2 className="section-title mt-5 pointer-events-none">Meet Our Dedicated Team!</h2>
+                        <p className="section-description mt-5 pointer-events-none">
+                            Our educators are more than just teachers; they are mentors, caregivers, and role models who inspire and guide our students every
+                            day. With a strong educational background and a passion for early childhood development, they create a supportive and enriching
+                            environment for all children.
                         </p>
                     </div>
 
+                    {/* Mobile View */}
                     <div className="flex md:hidden justify-center gap-4">
-                        <FeaturesColumn featureEntries={mobileColumn} />
+                        <EducatorsColumn className="card-shadow" staffEntries={mobileColumn} />
                     </div>
 
+                    {/* Desktop View */}
                     <div className="hidden md:flex justify-center gap-4">
-                        <FeaturesColumn featureEntries={firstColumn} />
-                        <FeaturesColumn featureEntries={secondColumn} />
+                        <EducatorsColumn className="card-shadow" staffEntries={firstColumn} />
+                        <EducatorsColumn className="card-shadow" staffEntries={secondColumn} />
                     </div>
                 </div>
                 {/* <div className="container px-10 max-w-[1080px] m-auto">
@@ -158,4 +184,4 @@ const Features = () => {
     );
 };
 
-export default Features;
+export default Educators;

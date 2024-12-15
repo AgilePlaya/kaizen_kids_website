@@ -1,6 +1,6 @@
 {
   "name": "kaizen_kids",
-  "version": "0.6.3",
+  "version": "0.6.9",
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@nextui-org/card": "^2.2.7",
+    "@nextui-org/react": "^2.6.8",
     "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.1.0",
     "framer-motion": "^11.12.0",
