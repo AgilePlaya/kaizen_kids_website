@@ -43,7 +43,7 @@ const Hero = ({ tag, heading, message }: { [key: string]: any }) => {
                                 <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">{message}</p>
                                 <div className="flex gap-2 items-center mt-[30px]">
                                     <AnimatedBorderButton text="Apply" link="/apply"/>
-                                    <Link className="btn btn-text" href="/about" scroll={false}>
+                                    <Link className="btn btn-text" href="/program" scroll={false}>
                                         <span>Learn More</span>
                                         <FaArrowRight className="ml-2 h-4 w-4" />
                                     </Link>
