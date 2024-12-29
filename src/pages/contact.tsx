@@ -4,7 +4,6 @@ import TransitionPage from "@/components/transition/PageAnimation";
 import Image from "next/image";
 import Head from "next/head";
 import Educators from "@/components/Educators";
-import { NextUIProvider } from "@nextui-org/react";
 import imgPrincipal from "../../public/staff/KK_Principal.jpg";
 
 export default function Contact() {
@@ -17,7 +16,6 @@ export default function Contact() {
             </Head>
             <TransitionPage>
                 <Navbar />
-                <NextUIProvider>
                     <section className="pt-8 md:py-24 bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#e8a03b,#fef5ea_66%)]">
                         <div className="container p-10 max-w-[1240px] m-auto pb-20 ">
                             <div>
@@ -54,7 +52,6 @@ export default function Contact() {
                         </div>
                     </section>
                     <Educators />
-                </NextUIProvider>
                 <Footer />
             </TransitionPage>
         </>

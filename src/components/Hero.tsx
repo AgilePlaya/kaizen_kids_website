@@ -54,16 +54,16 @@ const Hero = ({ tag, heading, message }: { [key: string]: any }) => {
                                     style={{
                                         translateY: translateY,
                                     }}
-                                    // animate={{
-                                    //     translateY: [-10, 10],
-                                    //     translateX: [-5, 5],
-                                    // }}
-                                    // transition={{
-                                    //     repeat: Infinity,
-                                    //     repeatType: "mirror",
-                                    //     ease: "easeInOut",
-                                    //     duration: 10,
-                                    // }}
+                                    animate={{
+                                        translateY: [-10, 10],
+                                        translateX: [-5, 5],
+                                    }}
+                                    transition={{
+                                        repeat: Infinity,
+                                        repeatType: "mirror",
+                                        ease: "easeInOut",
+                                        duration: 10,
+                                    }}
                                 >
                                     <Image
                                         src={ImImg1}

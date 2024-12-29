@@ -69,7 +69,7 @@ const Navbar = () => {
                             <AnimatedButton text="Program" link="/program#top" />
                         </li>
                         <li className="m-[2px]">
-                            <AnimatedButton text="Contact" link="/contact" />
+                            <AnimatedButton text="About" link="/contact" />
                         </li>
                         <li className="m-[2px]">
                             <AnimatedBorderButton text="Apply" link="/apply" />
@@ -96,7 +96,7 @@ const Navbar = () => {
                                 <Link href="/program" scroll={false}>Program</Link>
                             </li>
                             <li className="p-4 text-4xl hover:text-gray-500 ease-in duration-300">
-                                <Link href="/contact" scroll={false}>Contact</Link>
+                                <Link href="/contact" scroll={false}>About</Link>
                             </li>
                             <li className="p-4 text-4xl hover:text-gray-500 ease-in duration-300">
                                 <Link href="/apply" scroll={false}>Apply Now</Link>
