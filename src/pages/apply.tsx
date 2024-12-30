@@ -27,7 +27,7 @@ const apply = () => {
                                         width="600"
                                         height="1150"
                                         loading="lazy"
-                                        className="rounded-2xl object-contain max-w-full loading-placeholder"
+                                        className="rounded-2xl object-contain max-w-full"
                                     />
                                 </div>
 

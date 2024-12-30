@@ -1,6 +1,7 @@
 import imgSuchi from "../../public/staff/KK_Suchi.jpg";
 import imgKavita from "../../public/staff/KK_Kavita.jpg";
 import imgMaya from "../../public/staff/KK_Maya.jpg";
+import imgKajal from "../../public/staff/KK_Kajal.jpg";
 import imgSarita from "../../public/staff/KK_Sarita.jpg";
 import imgPinky from "../../public/staff/KK_Pinky.jpg";
 import imgVikash from "../../public/staff/KK_Vikash.jpg";
@@ -43,7 +44,7 @@ const staffList = [
         key: 3,
         name: "Kajal Kumari",
         title: "",
-        imageSrc: imgFemale.src,
+        imageSrc: imgKajal.src,
         placeholder: imgPlaceF.src,
         color: "#33CC33",
     },
