@@ -19,8 +19,8 @@ jobs:
         run: |
           sudo apt install jq -y
           if [ -f "${{ github.workspace }}/package.json" ]; then
-            export PKG_VER="$(jq -r '.version' package.json)"
-            echo "pkg_ver=$PKG_VER" >> $GITHUB_OUTPUT
+            export pkg_ver="$(jq -r '.version' package.json)"
+            echo "pkg_ver=$pkg_ver" >> $GITHUB_OUTPUT
             echo "manager=npm" >> $GITHUB_OUTPUT
             echo "command=ci" >> $GITHUB_OUTPUT
           else
