@@ -2,6 +2,7 @@
 
 ## Release 0.7.5
 
+- Added integration of next ui; next-ui rebranded to heroui
 - Added additional pages to make the website more cohesive and easy to navigate
   - Added about the staff under About
   - Added about the class programs under Programs

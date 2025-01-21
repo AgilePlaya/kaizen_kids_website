@@ -8,7 +8,9 @@ import { motion } from "framer-motion";
 import AnimatedBorderButton from "./utils/AnimatedBorderButton";
 import AnimatedButton from "./utils/AnimatedButton";
 
-const Navbar = () => {
+import { Navbar, Dropdown, Button, NavbarBrand, DropdownItem, DropdownMenu, NavbarContent, NavbarItem, DropdownTrigger } from "@heroui/react";
+
+const SiteNavbar = () => {
     const [nav, setNav] = useState(false);
     const [color, setColor] = useState("transparent");
     const [boxShadow, setBoxShadow] = useState("none");
@@ -33,6 +35,7 @@ const Navbar = () => {
     return (
         // <div className="">
         <>
+            {/* Top banner */}
             <div className="left-0 top-0 w-full py-0 px-0 bg-orange-200 overflow-hidden ">
                 <div className="relative w-[100vw] max-w-full text-sm overflow-hidden text-nowrap [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                     <motion.div
@@ -51,6 +54,7 @@ const Navbar = () => {
                     </motion.div>
                 </div>
             </div>
+
             <div className="sticky left-0 top-0 w-full py-4 px-10 z-10">
                 <div
                     style={{ backgroundColor: `${color}`, boxShadow: `${boxShadow}` }}
@@ -110,4 +114,4 @@ const Navbar = () => {
     );
 };
 
-export default Navbar;
+export default SiteNavbar;

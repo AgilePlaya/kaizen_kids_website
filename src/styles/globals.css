@@ -27,7 +27,7 @@
             content: "";
             position: absolute;
             inset: 0;
-            z-index: -2;
+            z-index: -10;
             left: -150%;
             top: -200%;
             width: 400%;
@@ -43,7 +43,7 @@
         &::after {
             content: "";
             position: absolute;
-            z-index: -1;
+            z-index: -9;
             left: 6px;
             top: 6px;
             width: calc(100% - 12px);

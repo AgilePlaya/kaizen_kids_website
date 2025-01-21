@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useEffect, useState } from "react";
+import { useEffect, useState, startTransition } from "react";
 import { useRouter } from "next/router";
 import Navbar from "../Navbar";
 import Footer from "../Footer";
@@ -15,10 +15,13 @@ const anim = (variants: { [key: string]: any }) => {
 
 const routes = {
     "/": "Home",
-    "/home": "Home",
-    "/program": "Program",
+    "/about": "About",
     "/apply": "Application",
-    "/contact": "About",
+    "/program": "Program",
+    "/schedule": "Daily Schedule",
+    "/curriculum": "Curriculum",
+    "/activity_centre": "Activities",
+    "/contact": "Contact",
     "/staff": "Staff",
 };
 
@@ -32,9 +35,11 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
 
     useEffect(() => {
         function resize() {
-            setDimensions({
-                width: window.innerWidth,
-                height: window.innerHeight,
+            startTransition(() => {
+                setDimensions({
+                    width: window.innerWidth,
+                    height: window.innerHeight,
+                });
             });
         }
         resize();
@@ -43,63 +48,6 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
             window.removeEventListener("resize", resize);
         };
     }, []);
-
-    const entry = {
-        initial: {
-            top: "100vh",
-            opacity: 0,
-        },
-        enter: {
-            top: "0",
-            opacity: 1,
-            transition: {
-                duration: 1.5,
-                ease: [0.8, 0, 0.2, 1],
-            },
-        },
-        exit: {
-            top: "-100vh",
-            opacity: 1,
-        },
-    };
-
-    const slidein = {
-        initial: {
-            top: "100vh",
-        },
-        enter: {
-            top: "100vh",
-        },
-        exit: {
-            top: "0",
-            transition: {
-                duration: 1.5,
-                ease: [0.8, 0, 0.2, 1],
-            },
-        },
-    };
-
-    const slideout = {
-        initial: {
-            y: 0,
-            scale: 1,
-            opacity: 1,
-        },
-        enter: {
-            y: 0,
-            scale: 1,
-            opacity: 1,
-        },
-        exit: {
-            y: -100,
-            scale: 0.9,
-            opacity: 0,
-            transition: {
-                duration: 2,
-                ease: [0.8, 0, 0.2, 1],
-            },
-        },
-    };
 
     const textanim = {
         initial: {
@@ -137,18 +85,6 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
     };
 
     return (
-        // <div className="inner">
-        //   <motion.div
-        //     {...anim(slidein)}
-        //     className="bg-white fixed top-0 left-0 w-full h-full z-20"
-        //   />
-        //   <motion.div {...anim(slideout)} className="page">
-        //     <motion.div {...anim(entry)} className="fixed top-0 left-0 w-full h-full z-10">
-        //       <Navbar />
-        //       {children}
-        //     </motion.div>
-        //   </motion.div>
-        // </div>
         <div className="page curve">
             <div className="h-full w-full flex overflow-hidden">
                 <motion.p

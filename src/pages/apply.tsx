@@ -1,5 +1,5 @@
 import Footer, { MinimalFooter } from "@/components/Footer";
-import Navbar from "@/components/Navbar";
+import SiteNavbar from "@/components/Navbar2";
 import TransitionPage from "@/components/transition/PageAnimation";
 import Head from "next/head";
 import Link from "next/link";
@@ -15,7 +15,7 @@ const apply = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <TransitionPage>
-                <Navbar />
+                <SiteNavbar />
                 <section className="bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#fcbe68,#fef5ea_66%)] min-h-full">
                     <div className="py-12 max-w-[1240px] m-auto">
                         <div className="hidden lg:flex transition-all">

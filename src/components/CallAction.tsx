@@ -2,6 +2,7 @@ import Link from "next/link";
 import React from "react";
 import { FaArrowRight } from "react-icons/fa";
 import AnimatedBorderButton from "./utils/AnimatedBorderButton";
+import { Button, Link as Link2 } from "@heroui/react";
 
 const CallAction = () => {
     return (
@@ -11,16 +12,18 @@ const CallAction = () => {
                     <div className="section-heading">
                         <h2 className="section-title">Apply to KaizenKids today</h2>
                         <p className="section-description mt-5">
-                            At KaizenKids, we nurture your child's curiosity and creativity. Our dedicated educators and innovative curriculum provide a strong
+                            We nurture your child's curiosity and creativity. Our dedicated educators and innovative curriculum provide a strong
                             foundation for lifelong learning. Join our vibrant community and give your child the best start. Apply today and see them thrive!
                         </p>
                     </div>
                     <div className="flex gap-2 mt-10 justify-center">
-                        <AnimatedBorderButton text="Apply" link="/apply" />
-                        <Link className="btn btn-text" href="/program" scroll={false}>
+                        {/* <AnimatedBorderButton text="Apply" link="/apply" /> */}
+                        {/* <Link className="btn btn-text" href="/program" scroll={false}>
                             <span>Learn More</span>
                             <FaArrowRight className="ml-2 h-4 w-4" />
-                        </Link>
+                        </Link> */}
+                        <Button as={Link2} color="primary" variant="shadow" href="/apply">Apply</Button>
+                        <Button as={Link2} color="primary" variant="light" href="/program" endContent={<FaArrowRight />}>Learn More</Button>
                     </div>
                 </div>
             </section>
