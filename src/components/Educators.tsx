@@ -50,6 +50,14 @@ const staffList = [
     },
     {
         key: 4,
+        name: "Nisha Kumari",
+        title: "",
+        imageSrc: imgFemale.src,
+        placeholder: imgPlaceF.src,
+        color: "#33CC33",
+    },
+    {
+        key: 5,
         name: "Sarita Kumari",
         title: "",
         imageSrc: imgSarita.src,
@@ -57,7 +65,7 @@ const staffList = [
         color: "#800080",
     },
     {
-        key: 5,
+        key: 6,
         name: "Pinky Devi",
         title: "",
         imageSrc: imgPinky.src,
@@ -65,7 +73,7 @@ const staffList = [
         color: "#FF3366",
     },
     {
-        key: 6,
+        key: 7,
         name: "Vikash Mahato",
         title: "",
         imageSrc: imgVikash.src,
@@ -81,7 +89,7 @@ function partition(array: typeof staffList, filter: any) {
     return [pass, fail];
 }
 
-const [firstColumn, secondColumn] = partition(staffList.slice(1, 7), (e: any) => e.key % 2 == 1);
+const [firstColumn, secondColumn] = partition(staffList.slice(1, 8), (e: any) => e.key % 2 == 1);
 
 //Output
 // console.log(firstColumn);
@@ -128,11 +136,11 @@ const EducatorsColumn: React.FC<{ className?: string; staffEntries: typeof staff
 const Educators = () => {
     return (
         <>
-            <section className="py-16 md:py-24 lg:py-32 transition-all bg-[radial-gradient(ellipse_200%_100%_at_bottom_left,#fcbe68,#fef5ea_66%)]">
+            <section className="py-16 md:py-24 lg:py-32 transition-all bg-[radial-gradient(ellipse_200%_100%_at_bottom_right,#a8e9ff,#fef5ea_46%)]">
                 <div className="px-10 container max-w-[1080px] m-auto ">
                     <div className="section-heading">
                         <div className="flex justify-center">
-                            <div className="tag">Our Educators</div>
+                            {/* <div className="tag">Our Educators</div> */}
                         </div>
                         <h2 className="section-title mt-5 pointer-events-none">Meet Our Dedicated Team!</h2>
                         <p className="section-description mt-5 pointer-events-none">

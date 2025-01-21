@@ -7,33 +7,21 @@ import CallAction from "@/components/CallAction";
 import Features from "@/components/Features";
 import Image from "next/image";
 import Head from "next/head";
-import ImImg1 from "@/../public/media/hero_media_resized.jpg";
-
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
+import ImImg1 from "@/../public/media/TP_LR_DSC2473_web_resized.jpg";
 
 export default function Home() {
     return (
         <>
             <Head>
-                <title>KaizenKids</title>
+                <title>KaizenKids : About Us</title>
                 <meta name="description" content="KaizenKids website" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <TransitionPage>
                 <SiteNavbar />
                 <Hero
-                    tag="Join Us Now"
-                    heading="Welcome to KaizenKids!!"
-                    message="At KaizenKids, we believe in nurturing young minds in a safe, joyful, and stimulating environment. Our goal is to create a foundation for lifelong learning and curiosity."
+                    heading="Mission Statement"
+                    message="Our students will be confident speakers, respectful listeners, creative problem solvers and experiential learners. They will also show team work as part of their holistic development."
                     image={ImImg1}
                 />
                 <FeatureTicker />

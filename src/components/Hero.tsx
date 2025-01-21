@@ -8,8 +8,9 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import AnimatedBorderButton from "./utils/AnimatedBorderButton";
 import AnimatedButton from "./utils/AnimatedButton";
 import Link from "next/link";
+import { Button, Link as Link2 } from "@heroui/react";
 
-const Hero = ({ tag, heading, message }: { [key: string]: any }) => {
+const Hero = ({ tag, heading, message, image }: { [key: string]: any }) => {
     const heroRef = useRef(null);
     const { scrollYProgress } = useScroll({
         target: heroRef,
@@ -34,7 +35,7 @@ const Hero = ({ tag, heading, message }: { [key: string]: any }) => {
                         <div className="md:flex items-center">
                             <div className="md:max-w-[480px] md:min-w-[420px] md:pr-4 lg:min-w-[540px] lg:pr-10">
                                 <div className="flex">
-                                    <div className="tag pointer-events-none">{tag}</div>
+                                    {/* <div className="tag pointer-events-none">{tag}</div> */}
                                 </div>
                                 {/* <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">Version 2.0 is here</div> */}
                                 <h1 className="text-4xl md:text-[54px] lg:text-[60px] md:leading-[80px] font-black bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
@@ -42,31 +43,37 @@ const Hero = ({ tag, heading, message }: { [key: string]: any }) => {
                                 </h1>
                                 <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">{message}</p>
                                 <div className="flex gap-2 items-center mt-[30px]">
-                                    <AnimatedBorderButton text="Apply" link="/apply"/>
+                                    {/* <AnimatedBorderButton text="Apply" link="/apply"/>
                                     <Link className="btn btn-text" href="/program" scroll={false}>
                                         <span>Learn More</span>
                                         <FaArrowRight className="ml-2 h-4 w-4" />
-                                    </Link>
+                                    </Link> */}
+                                    <Button as={Link2} color="primary" variant="shadow" href="/apply">
+                                        Apply
+                                    </Button>
+                                    <Button as={Link2} color="primary" variant="light" href="/program" endContent={<FaArrowRight />}>
+                                        Learn More
+                                    </Button>
                                 </div>
                             </div>
                             <div className="flex mt-16 md:mt-0 md:max-h-[648px] md:flex-1 justify-center md:justify-end m-auto relative">
                                 <motion.div
-                                    style={{
-                                        translateY: translateY,
-                                    }}
-                                    animate={{
-                                        translateY: [-10, 10],
-                                        translateX: [-5, 5],
-                                    }}
-                                    transition={{
-                                        repeat: Infinity,
-                                        repeatType: "mirror",
-                                        ease: "easeInOut",
-                                        duration: 10,
-                                    }}
+                                // style={{
+                                //     translateY: translateY,
+                                // }}
+                                // animate={{
+                                //     translateY: [-10, 10],
+                                //     translateX: [-5, 5],
+                                // }}
+                                // transition={{
+                                //     repeat: Infinity,
+                                //     repeatType: "mirror",
+                                //     ease: "easeInOut",
+                                //     duration: 10,
+                                // }}
                                 >
                                     <Image
-                                        src={ImImg1}
+                                        src={image}
                                         alt="Students of Kaizen Kids playing with some rings"
                                         width="450"
                                         height="600"
