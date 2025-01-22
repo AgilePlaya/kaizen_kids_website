@@ -17,7 +17,7 @@ const routes = {
     "/": "Home",
     "/about": "About",
     "/apply": "Application",
-    "/program": "Program",
+    "/program": "Program & Features",
     "/schedule": "Daily Schedule",
     "/curriculum": "Curriculum",
     "/activity_centre": "Activities",

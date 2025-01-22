@@ -2,13 +2,12 @@
 
 import React, { useRef } from "react";
 import Image from "next/image";
-import ImImg1 from "@/../public/media/hero_media_resized.jpg";
 import { FaArrowRight } from "react-icons/fa";
 import { motion, useScroll, useTransform } from "framer-motion";
 import AnimatedBorderButton from "./utils/AnimatedBorderButton";
 import AnimatedButton from "./utils/AnimatedButton";
 import Link from "next/link";
-import { Button, Link as Link2 } from "@heroui/react";
+import { Button } from "@heroui/react";
 
 const Hero = ({ tag, heading, message, image }: { [key: string]: any }) => {
     const heroRef = useRef(null);
@@ -48,10 +47,10 @@ const Hero = ({ tag, heading, message, image }: { [key: string]: any }) => {
                                         <span>Learn More</span>
                                         <FaArrowRight className="ml-2 h-4 w-4" />
                                     </Link> */}
-                                    <Button as={Link2} color="primary" variant="shadow" href="/apply">
+                                    <Button as={Link} color="primary" variant="shadow" href="/apply">
                                         Apply
                                     </Button>
-                                    <Button as={Link2} color="primary" variant="light" href="/program" endContent={<FaArrowRight />}>
+                                    <Button as={Link} color="primary" variant="light" href="/program" endContent={<FaArrowRight />}>
                                         Learn More
                                     </Button>
                                 </div>

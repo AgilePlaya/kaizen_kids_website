@@ -7,10 +7,11 @@ import CallAction from "@/components/CallAction";
 import Features from "@/components/Features";
 import Image from "next/image";
 import Head from "next/head";
-import ImImg1 from "@/../public/media/TP_LR_DSC3248_Web_resized.jpg";
+import ImImg1 from "@/../public/media/playin_blocks_web.jpg";
 import ImImg2 from "@/../public/android-chrome-512x512.png";
-import { Tab, Tabs, Card, CardBody, Button, Link as Link2, Image as Image2 } from "@heroui/react";
+import { Tab, Tabs, Card, CardBody, Button, Image as Image2 } from "@heroui/react";
 import { FaArrowRight } from "react-icons/fa";
+import Link from "next/link";
 
 export default function Home() {
     let tabs = [
@@ -103,10 +104,10 @@ export default function Home() {
                                         nurturing environment.
                                     </p>
                                     <div className="flex gap-2 items-center mt-[30px]">
-                                        <Button as={Link2} color="primary" variant="shadow" href="/apply">
+                                        <Button as={Link} color="primary" variant="shadow" href="/apply">
                                             Apply
                                         </Button>
-                                        <Button as={Link2} color="primary" variant="light" href="/program" endContent={<FaArrowRight />}>
+                                        <Button as={Link} color="primary" variant="light" href="/program" endContent={<FaArrowRight />}>
                                             Learn More
                                         </Button>
                                     </div>
@@ -243,10 +244,10 @@ export default function Home() {
                             </p>
                         </div>
                         <div className="flex gap-2 mt-10 justify-center text-xl">
-                            <Button as={Link2} color="primary" variant="shadow" href="/apply">
+                            <Button as={Link} color="primary" variant="shadow" href="/apply">
                                 Apply
                             </Button>
-                            <Button as={Link2} color="primary" variant="light" href="/program" endContent={<FaArrowRight />}>
+                            <Button as={Link} color="primary" variant="light" href="/program" endContent={<FaArrowRight />}>
                                 Learn More
                             </Button>
                         </div>

@@ -7,7 +7,7 @@ import CallAction from "@/components/CallAction";
 import Features from "@/components/Features";
 import Image from "next/image";
 import Head from "next/head";
-import ImImg1 from "@/../public/media/TP_LR_DSC2473_web_resized.jpg";
+import ImImg1 from "@/../public/media/hoola_hoop_single_web_resized.jpg";
 
 export default function Home() {
     return (
@@ -20,7 +20,7 @@ export default function Home() {
             <TransitionPage>
                 <SiteNavbar />
                 <Hero
-                    heading="Mission Statement"
+                    heading="Mission"
                     message="Our students will be confident speakers, respectful listeners, creative problem solvers and experiential learners. They will also show team work as part of their holistic development."
                     image={ImImg1}
                 />
