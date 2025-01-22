@@ -1,19 +1,10 @@
 import Footer from "@/components/Footer";
 import SiteNavbar from "@/components/Navbar2";
-import Hero from "@/components/Hero";
-import FeatureTicker from "@/components/FeatureTicker";
 import TransitionPage from "@/components/transition/PageAnimation";
-import Features from "@/components/Features";
-import CallAction from "@/components/CallAction";
 import Image from "next/image";
 import Head from "next/head";
-import ImImg1 from "@/../public/media/hero_media_resized.jpg";
-import AnimatedBorderButton from "@/components/utils/AnimatedBorderButton";
-import { motion, useScroll, useTransform } from "framer-motion";
-import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
+import { useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
-import Link from "next/link";
-import { Button, Link as Link2 } from "@heroui/react";
 import Educators from "@/components/Educators";
 import imgPrincipal from "../../public/staff/KK_Principal.jpg";
 

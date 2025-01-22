@@ -8,7 +8,7 @@ import TransitionPage from "@/components/transition/PageAnimation";
 import CallAction from "@/components/CallAction";
 import Features from "@/components/Features";
 import FeatureTicker from "@/components/FeatureTicker";
-import ImImg1 from "@/../public/media/TP_LR_DSC3248_Web_resized.jpg";
+import ImImg1 from "@/../public/media/painted_heart.jpg";
 
 const program = () => {
     const heroRef = useRef(null);
@@ -28,8 +28,8 @@ const program = () => {
             <TransitionPage>
                 <SiteNavbar />
                 <Hero
-                    heading="Welcome to KaizenKids!!"
-                    message="At KaizenKids, we believe in nurturing young minds in a safe, joyful, and stimulating environment. Our goal is to create a foundation for lifelong learning and curiosity."
+                    heading="KaizenKids Programs"
+                    message="Our programs offer the most effective learning for children by focusing on individual needs. Each program is carefully crafted to nurture and develop every child's unique abilities. Join us to experience a personalized approach to early education."
                     image={ImImg1} />
                 <FeatureTicker />
                 <Features />

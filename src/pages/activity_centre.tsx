@@ -8,9 +8,9 @@ import TransitionPage from "@/components/transition/PageAnimation";
 import CallAction from "@/components/CallAction";
 import Features from "@/components/Features";
 import FeatureTicker from "@/components/FeatureTicker";
-import ImImg1 from "@/../public/media/TP_LR_DSC3248_Web_resized.jpg";
+import ImImg1 from "@/../public/media/deer_web_resized.jpg";
 
-import { Accordion, AccordionItem, Button, Link as Link2 } from "@heroui/react";
+import { Accordion, AccordionItem, Button} from "@heroui/react";
 import Image from "next/image";
 import ImImg2 from "@/../public/activity_centre/cartoon_owl.png";
 import ImImg3 from "@/../public/activity_centre/owl_abacus.png";
@@ -28,6 +28,7 @@ import { PiDiscoBallFill } from "react-icons/pi";
 import { GrYoga } from "react-icons/gr";
 import { IoFitness } from "react-icons/io5";
 import { FiPhoneCall } from "react-icons/fi";
+import Link from "next/link";
 
 const activity_centre = () => {
     const heroRef = useRef(null);
@@ -83,15 +84,14 @@ const activity_centre = () => {
                                         KaizenKids: Activity Centre
                                     </h1>
                                     <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">
-                                        After hours at KaizenKids Activity Centre, explore a variety of engaging activities designed to keep children
-                                        entertained and learning even after school hours.
+                                        After hours at KaizenKids, the Activity Centre opens up the doors for people of all ages to learn and participate in a variety of engaging activities and skills.
                                     </p>
                                     <div className="flex gap-2 items-center mt-[30px]">
                                         Call us at <FiPhoneCall className="text-xl text-secondary" />{" "}
-                                        <Link2 isExternal href="tel:+918877668696" underline="always" className="text-xl text-secondary">
+                                        <Link href="tel:+918877668696" className="text-xl text-secondary underline underline-offset-4">
                                             {" "}
                                             +91 8877668696
-                                        </Link2>{" "}
+                                        </Link>{" "}
                                     </div>
                                 </div>
                                 <div className="flex mt-16 md:mt-0 md:max-h-[648px] md:flex-1 justify-center md:justify-end m-auto relative">
@@ -129,7 +129,7 @@ const activity_centre = () => {
                             <div className="flex-1 p-4 m-2 md:p-4 md:max-w-[40%] transition-all">
                                 <div className="flex items-center justify-center">
                                     <Accordion
-                                        className="p-2 flex flex-col gap-1 m-auto min-w-[230px] max-w-[360px] bg-gray-50/50 rounded-lg shadow-lg"
+                                        className="p-2 flex flex-col gap-1 m-auto min-w-[300px] max-w-[400px] bg-gray-50/50 rounded-lg shadow-lg"
                                         itemClasses={itemClasses}
                                         variant="bordered"
                                         onSelectionChange={handleAccordionChange}
@@ -241,22 +241,11 @@ const activity_centre = () => {
                             </p>
                         </div>
                         <div className="flex gap-2 mt-10 justify-center text-xl">
-                            {/* <AnimatedBorderButton text="Apply" link="/apply" /> */}
-                            {/* <Link className="btn btn-text" href="/program" scroll={false}>
-                                            <span>Learn More</span>
-                                            <FaArrowRight className="ml-2 h-4 w-4" />
-                                        </Link> */}
-                            {/* <Button as={Link2} color="primary" variant="shadow" href="/apply">
-                                Apply
-                            </Button> */}
-                            {/* <Button as={Link2} color="primary" variant="light" href="/program" endContent={<FaArrowRight />}>
-                                Learn More
-                            </Button> */}
                             Call us at <FiPhoneCall className="text-xl text-secondary" />{" "}
-                            <Link2 isExternal href="tel:+918877668696" underline="always" className="text-xl text-secondary">
+                            <Link href="tel:+918877668696" className="text-xl text-secondary underline underline-offset-4">
                                 {" "}
                                 +91 8877668696
-                            </Link2>{" "}
+                            </Link>{" "}
                         </div>
                     </div>
                 </section>

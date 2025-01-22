@@ -91,7 +91,7 @@ const SiteNavbar = () => {
 
                     <NavbarContent className="sm:hidden" justify="end">
                         <NavbarItem>
-                            <Button as={Link2} color="primary" variant="ghost" href="/apply">
+                            <Button as={Link} color="primary" variant="ghost" href="/apply">
                                 Apply
                             </Button>
                         </NavbarItem>
@@ -125,13 +125,13 @@ const SiteNavbar = () => {
                                     base: "gap-4",
                                 }}
                             >
-                                <DropdownItem key="features" description="What makes different from others." as={Link} href="/program">
+                                <DropdownItem key="features" description="What makes us different from others" as={Link} href="/program">
                                     Our Features
                                 </DropdownItem>
                                 <DropdownItem key="schedule" description="How does a typical day look like?" as={Link} href="/schedule">
                                     Daily Schedule
                                 </DropdownItem>
-                                <DropdownItem key="activities" description="Activities after hours." as={Link} href="/activity_centre">
+                                <DropdownItem key="activities" description="Activities after hours" as={Link} href="/activity_centre">
                                     Activites
                                 </DropdownItem>
                             </DropdownMenu>
@@ -163,7 +163,7 @@ const SiteNavbar = () => {
                             </DropdownMenu>
                         </Dropdown>
 
-                        <Button as={Link2} color="primary" variant="ghost" href="/apply">
+                        <Button as={Link} color="primary" variant="ghost" href="/apply">
                             Apply
                         </Button>
                     </NavbarContent>
