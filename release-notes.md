@@ -1,5 +1,11 @@
 # Release Notes
 
+## Release 0.7.6
+
+- Updated hero images of all pages to be unique
+- Fixed learn more button in Programs page (should redirect to about page now)
+- Updated thero content for programs page to be different from the landing page
+
 ## Release 0.7.5
 
 - Added integration of next ui; next-ui rebranded to heroui
