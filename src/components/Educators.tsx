@@ -90,6 +90,7 @@ function partition(array: typeof staffList, filter: any) {
 }
 
 const [firstColumn, secondColumn] = partition(staffList.slice(1, 8), (e: any) => e.key % 2 == 1);
+const mobileColumn = staffList.slice(1, 8);
 
 //Output
 // console.log(firstColumn);
@@ -98,7 +99,6 @@ const [firstColumn, secondColumn] = partition(staffList.slice(1, 8), (e: any) =>
 // const firstColumn = staffList.slice(1, 4);
 // const secondColumn = staffList.slice(4, 7);
 
-const mobileColumn = staffList.slice(1, 7);
 
 const EducatorsColumn: React.FC<{ className?: string; staffEntries: typeof staffList }> = ({ className, staffEntries }) => {
     return (

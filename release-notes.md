@@ -1,5 +1,12 @@
 # Release Notes
 
+## Release 0.7.7
+
+- Added fix for missing staff members in mobile view
+- Release pipeline: fixes added for auto generation of releases
+- Removed support for github-pages builds (Support for github-pages to be dropped form v0.8.0)
+  - gh-staging branch shall be removed when v0.8.0 is released
+
 ## Release 0.7.6
 
 - Updated hero images of all pages to be unique

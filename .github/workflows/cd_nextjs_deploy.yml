@@ -91,15 +91,3 @@ jobs:
                   retention-days: 30
                   if-no-files-found: error
                   include-hidden-files: true
-
-    # Deployment job
-    Deploy_Pages:
-        environment:
-            name: github-pages
-            url: ${{ steps.deployment.outputs.page_url }}
-        runs-on: ubuntu-latest
-        needs: Build_Checks
-        steps:
-            - name: Deploy to GitHub Pages
-              id: deployment
-              uses: actions/deploy-pages@v4
