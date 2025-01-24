@@ -1,5 +1,9 @@
 # Release Notes
 
+## Release 0.7.8
+
+- Added photo for Nisha to the educators' page
+
 ## Release 0.7.7
 
 - Added fix for missing staff members in mobile view
