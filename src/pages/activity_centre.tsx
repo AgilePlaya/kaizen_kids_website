@@ -80,7 +80,7 @@ const activity_centre = () => {
                         <div>
                             <div className="md:flex items-center">
                                 <div className="md:max-w-[420px] md:min-w-[540px] md:pr-10">
-                                    <h1 className="text-4xl md:text-[60px] md:leading-[80px] font-extrabold bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
+                                    <h1 className="text-4xl md:text-[60px] md:leading-[80px] font-extrabold bg-linear-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
                                         KaizenKids: Activity Centre
                                     </h1>
                                     <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">
@@ -231,7 +231,7 @@ const activity_centre = () => {
                 </section>
 
                 {/* Call to action section */}
-                <section className="bg-gradient-to-b from-white to-[#ffa69e] py-24">
+                <section className="bg-linear-to-b from-white to-[#ffa69e] py-24">
                     <div className="container px-10 max-w-[1080px] m-auto">
                         <div className="section-heading">
                             <h2 className="section-title">Apply to KaizenKids today</h2>

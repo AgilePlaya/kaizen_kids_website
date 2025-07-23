@@ -24,7 +24,7 @@ export default function Contact() {
                                     <div className="flex">
                                         {/* <div className="tag pointer-events-none">From the Principal's Office</div> */}
                                     </div>
-                                    <h1 className="text-4xl md:text-[54px] lg:text-[60px] md:leading-[80px] font-black bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
+                                    <h1 className="text-4xl md:text-[54px] lg:text-[60px] md:leading-[80px] font-black bg-linear-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
                                         Note from the Principal
                                     </h1>
                                     <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">

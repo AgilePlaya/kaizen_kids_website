@@ -31,7 +31,7 @@ export const FeatureCard = ({ featureList }: { [key: string]: any }) => {
 
     return (
         <>
-            <div className={`absolute inset-0 bg-red-300 h-full w-full rounded-2xl bg-gradient-to-br from-white to-[${selectedFeature.color}]`}>I am a card</div>
+            <div className={`absolute inset-0 bg-red-300 h-full w-full rounded-2xl bg-linear-to-br from-white to-[${selectedFeature.color}]`}>I am a card</div>
         </>
     );
 };

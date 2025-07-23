@@ -33,8 +33,8 @@ const about = () => {
                 <SiteNavbar />
                 {/* <div id="apply" className="min-h-full bg-gray-700">
                     <div className="flex items-center justify-center h-[80vh] bg-fixed bg-center bg-cover custom-img">
-                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2] h-[80vh] " />
-                        <div className="p-10 pr-20 max-w-[1240px] text-white z-[2] mt-[-5rem]">
+                        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-2 h-[80vh] " />
+                        <div className="p-10 pr-20 max-w-[1240px] text-white z-2 -mt-20">
                             <h2 className="text-5xl font-bold">About Us</h2>
                         </div>
                     </div>
@@ -67,7 +67,7 @@ const about = () => {
                                         <div className="tag pointer-events-none">Welcome to KaizenKids</div>
                                     </div>
                                     {/* <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">Version 2.0 is here</div> */}
-                                    <h1 className="text-4xl md:text-[60px] md:leading-[80px] font-extrabold bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
+                                    <h1 className="text-4xl md:text-[60px] md:leading-[80px] font-extrabold bg-linear-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
                                         Our Mission
                                     </h1>
                                     <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">

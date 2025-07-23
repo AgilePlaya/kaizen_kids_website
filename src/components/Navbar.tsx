@@ -37,7 +37,7 @@ const SiteNavbar = () => {
         <>
             {/* Top banner */}
             <div className="left-0 top-0 w-full py-0 px-0 bg-orange-200 overflow-hidden ">
-                <div className="relative w-[100vw] max-w-full text-sm overflow-hidden text-nowrap [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
+                <div className="relative w-screen max-w-full text-sm overflow-hidden text-nowrap mask-[linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
                     <motion.div
                         className="text-center"
                         // animate={{
@@ -89,7 +89,7 @@ const SiteNavbar = () => {
                         className={
                             nav
                                 ? "sm:hidden absolute top-0 left-0 right-0 bottom-0 flex justify-center items-center w-full h-screen bg-[#110801] text-center ease-in duration-300 scale-125 overflow-hidden"
-                                : "sm:hidden absolute top-0 left-[-100%] right-0 bottom-0 flex justify-center items-center w-2/3 h-screen bg-black/0 text-center ease-in duration-300 scale-125"
+                                : "sm:hidden absolute top-0 -left-full right-0 bottom-0 flex justify-center items-center w-2/3 h-screen bg-black/0 text-center ease-in duration-300 scale-125"
                         }
                     >
                         <ul>

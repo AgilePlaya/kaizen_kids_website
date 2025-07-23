@@ -94,7 +94,7 @@ export default function Home() {
                         <div>
                             <div className="md:flex items-center">
                                 <div className="md:max-w-[420px] md:min-w-[540px] md:pr-10">
-                                    <h1 className="text-4xl md:text-[60px] md:leading-[80px] font-extrabold bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
+                                    <h1 className="text-4xl md:text-[60px] md:leading-[80px] font-extrabold bg-linear-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
                                         Daily Schedule
                                     </h1>
                                     <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">
@@ -200,7 +200,7 @@ export default function Home() {
                                             <CardBody className="p-4 sm:6 md:4">
                                                 <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-12 gap-8 sm:gap-4 md:gap-4 items-center justify-center transition-all">
                                                     <div className="hidden sm:flex sm:col-span-6 items-center">
-                                                        <h2 className="text-3xl md:text-3xl md:px-2 lg:text-4xl lg:px-4 transition-all font-black bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none">
+                                                        <h2 className="text-3xl md:text-3xl md:px-2 lg:text-4xl lg:px-4 transition-all font-black bg-linear-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none">
                                                             {item.label}
                                                         </h2>
                                                     </div>
@@ -216,7 +216,7 @@ export default function Home() {
                                                     </div>
 
                                                     <div className="flex flex-col col-span-4 sm:col-span-3 md:col-span-7 sm:hidden transition-all">
-                                                        <h2 className="text-2xl md:text-3xl md:px-2 lg:text-4xl lg:px-4 transition-all font-black bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none">
+                                                        <h2 className="text-2xl md:text-3xl md:px-2 lg:text-4xl lg:px-4 transition-all font-black bg-linear-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none">
                                                             {item.label}
                                                         </h2>
                                                     </div>
@@ -234,7 +234,7 @@ export default function Home() {
                 </section>
 
                 {/* Call to action section */}
-                <section className="bg-gradient-to-b from-white to-[#a8e9ff] py-24">
+                <section className="bg-linear-to-b from-white to-[#a8e9ff] py-24">
                     <div className="container px-10 max-w-[1080px] m-auto">
                         <div className="section-heading">
                             <h2 className="section-title">Apply to KaizenKids today</h2>

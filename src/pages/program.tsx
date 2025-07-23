@@ -39,7 +39,7 @@ const program = () => {
                                 <div className="md:max-w-[480px] md:min-w-[420px] md:pr-4 lg:min-w-[540px] lg:pr-10">
                                     <div className="flex">{/* <div className="tag pointer-events-none">{tag}</div> */}</div>
                                     {/* <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">Version 2.0 is here</div> */}
-                                    <h1 className="text-4xl md:text-[54px] lg:text-[60px] md:leading-[80px] font-black bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
+                                    <h1 className="text-4xl md:text-[54px] lg:text-[60px] md:leading-[80px] font-black bg-linear-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
                                         KaizenKids Programs
                                     </h1>
                                     <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">

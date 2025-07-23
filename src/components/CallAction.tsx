@@ -7,7 +7,7 @@ import { Button } from "@heroui/react";
 const CallAction = () => {
     return (
         <>
-            <section className="bg-gradient-to-b from-white to-[#f7bb68] py-24">
+            <section className="bg-linear-to-b from-white to-[#f7bb68] py-24">
                 <div className="container px-10 max-w-[1080px] m-auto">
                     <div className="section-heading">
                         <h2 className="section-title">Apply to KaizenKids today</h2>

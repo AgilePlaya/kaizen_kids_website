@@ -1,116 +1,144 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+@config '../../tailwind.config.ts';
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+  *,
+  ::after,
+  ::before,
+  ::backdrop,
+  ::file-selector-button {
+    border-color: var(--color-gray-200, currentcolor);
+  }
+}
+
+@utility btn-anim-border {
+  position: relative;
+  z-index: 0;
+  /* width: 400px;
+        height: 300px; */
+  border-radius: 10px;
+  overflow: hidden;
+  /* padding: 2rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-family: sans-serif; */
+  font-weight: bolder;
+
+  &::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    z-index: -10;
+    left: -150%;
+    top: -200%;
+    width: 400%;
+    height: 500%;
+    background-repeat: no-repeat;
+    background-size:
+      50% 50%,
+      50% 50%;
+    background-position:
+      0 0,
+      100% 0,
+      100% 100%,
+      0 100%;
+    background-image:
+      linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300),
+      linear-gradient(#d53e33, #d53e33), linear-gradient(#377af5, #377af5);
+    animation: rotate 4s linear infinite;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    z-index: -9;
+    left: 6px;
+    top: 6px;
+    width: calc(100% - 12px);
+    height: calc(100% - 12px);
+    background: #fad8b0;
+    border-radius: 5px;
+  }
+}
+
+@utility btn {
+  @apply px-4 py-2 text-base leading-6 sm:text-lg lg:text-xl rounded-xl font-medium ease-in-out duration-500 text-nowrap transition-colors z-5;
+}
+
+@utility btn-primary {
+  /* @apply font-semibold border-2 border-black bg-black text-white; */
+  @apply font-semibold border-2 text-black;
+
+  &:hover {
+    @apply border-2 border-black text-black ease-in-out duration-500;
+  }
+}
+
+@utility btn-text {
+  @apply inline-flex items-center justify-center border-2 border-transparent bg-transparent text-black;
+
+  &:hover {
+    @apply border-2 border-black bg-[#f7d0a2] text-black ease-in-out duration-500;
+  }
+}
+
+@utility btn-border {
+  @apply border-2 border-black bg-transparent text-black;
+
+  &:hover {
+    @apply bg-[#f7d0a2] text-black ease-in-out duration-500;
+  }
+}
+
+@utility feature-ticker-image {
+  @apply h-8 w-auto saturate-50;
+}
+
+@utility tag {
+  @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg;
+}
+
+@utility section-heading {
+  @apply max-w-[540px] mx-auto pointer-events-none;
+}
+
+@utility section-title {
+  @apply text-center text-3xl md:text-4xl font-extrabold bg-linear-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none;
+}
+
+@utility section-description {
+  @apply text-center text-base md:text-lg text-[#1d1004] pointer-events-none;
+}
+
+@utility card {
+  @apply p-8 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
+}
+
+@utility card-shadow {
+  /* border-width: 1px;
+        border-color: rgb(34 34 34 / 0.1); */
+  /* box-shadow: rgba(240, 149, 46, 0.4) 2px 5px, rgba(240, 149, 46, 0.3) 4px 10px, rgba(240, 149, 46, 0.2) 6px 15px, rgba(240, 149, 46, 0.1) 8px 20px; */
+  box-shadow:
+    rgba(240, 149, 46, 0.5) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(156, 85, 26, 0.65) 0px -2px 6px 0px inset;
+}
 
 @layer components {
     @keyframes rotate {
         100% {
             transform: rotate(1turn);
         }
-    }
-
-    .btn-anim-border {
-        position: relative;
-        z-index: 0;
-        /* width: 400px;
-        height: 300px; */
-        border-radius: 10px;
-        overflow: hidden;
-        /* padding: 2rem; */
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        /* font-family: sans-serif; */
-        font-weight: bolder;
-
-        &::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: -10;
-            left: -150%;
-            top: -200%;
-            width: 400%;
-            height: 500%;
-            background-repeat: no-repeat;
-            background-size: 50% 50%, 50% 50%;
-            background-position: 0 0, 100% 0, 100% 100%, 0 100%;
-            background-image: linear-gradient(#399953, #399953), linear-gradient(#fbb300, #fbb300), linear-gradient(#d53e33, #d53e33),
-                linear-gradient(#377af5, #377af5);
-            animation: rotate 4s linear infinite;
-        }
-
-        &::after {
-            content: "";
-            position: absolute;
-            z-index: -9;
-            left: 6px;
-            top: 6px;
-            width: calc(100% - 12px);
-            height: calc(100% - 12px);
-            background: #fad8b0;
-            border-radius: 5px;
-        }
-    }
-
-    .btn {
-        @apply px-4 py-2 text-base leading-6 sm:text-lg lg:text-xl rounded-xl font-medium ease-in-out duration-500 text-nowrap transition-colors z-[5];
-    }
-
-    .btn-primary {
-        /* @apply font-semibold border-2 border-black bg-black text-white; */
-        @apply font-semibold border-2 text-black;
-    }
-
-    .btn-primary:hover {
-        @apply border-2 border-black text-black ease-in-out duration-500;
-    }
-
-    .btn-text {
-        @apply inline-flex items-center justify-center border-2 border-transparent bg-transparent text-black;
-    }
-
-    .btn-text:hover {
-        @apply border-2 border-black bg-[#f7d0a2] text-black ease-in-out duration-500;
-    }
-
-    .btn-border {
-        @apply border-2 border-black bg-transparent text-black;
-    }
-
-    .btn-border:hover {
-        @apply bg-[#f7d0a2] text-black ease-in-out duration-500;
-    }
-
-    .feature-ticker-image {
-        @apply h-8 w-auto saturate-50;
-    }
-
-    .tag {
-        @apply text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg;
-    }
-
-    .section-heading {
-        @apply max-w-[540px] mx-auto pointer-events-none;
-    }
-
-    .section-title {
-        @apply text-center text-3xl md:text-4xl font-extrabold bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none;
-    }
-
-    .section-description {
-        @apply text-center text-base md:text-lg text-[#1d1004] pointer-events-none;
-    }
-
-    .card {
-        @apply p-8 border border-[#222222]/10 rounded-3xl shadow-[0_7px_14px_#EAEAEA] max-w-xs w-full;
-    }
-
-    .card-shadow {
-        /* border-width: 1px;
-        border-color: rgb(34 34 34 / 0.1); */
-        /* box-shadow: rgba(240, 149, 46, 0.4) 2px 5px, rgba(240, 149, 46, 0.3) 4px 10px, rgba(240, 149, 46, 0.2) 6px 15px, rgba(240, 149, 46, 0.1) 8px 20px; */
-        box-shadow: rgba(240, 149, 46, 0.5) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(156, 85, 26, 0.65) 0px -2px 6px 0px inset;
     }
 }
 

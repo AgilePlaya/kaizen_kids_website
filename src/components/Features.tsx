@@ -99,7 +99,7 @@ const tabletSecondColumn = featureList.slice(4, 9);
 
 const FeaturesColumn: React.FC<{ className?: string; featureEntries: typeof featureList }> = ({ className, featureEntries }) => {
     return (
-        // <div className={twMerge("flex flex-col gap-6 mt-10 [mask-image:linear-gradient(to_bottom,transparent,black_20%,black_80%,transparent)]", className)}>
+        // <div className={twMerge("flex flex-col gap-6 mt-10 mask-[linear-gradient(to_bottom,transparent,black_20%,black_80%,transparent)]", className)}>
         <div className={twMerge("flex flex-col gap-6 mt-10", className)}>
             {/* Mobile View */}
             {featureEntries.map(({ key, text, imageSrc, name }) => (

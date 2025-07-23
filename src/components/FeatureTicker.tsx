@@ -18,7 +18,7 @@ const FeatureTicker = () => {
         <>
             <div className=" py-8 bg-white w-full m-0">
                 <div className="">
-                    <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
+                    <div className="flex overflow-hidden mask-[linear-gradient(to_right,transparent,black,transparent)]">
                         <motion.div
                             className="flex gap-12 pr-12 flex-none"
                             animate={{

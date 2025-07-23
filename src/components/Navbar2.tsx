@@ -107,14 +107,14 @@ const SiteNavbar = () => {
 
                     <NavbarContent className="hidden sm:flex gap-1 transition-all" justify="end">
                         {/* <Link href="/">Home</Link> */}
-                        <Button as={Link} className="bg-[transparent] data-[hover=true]:bg-transparent" variant="light" href="/">
+                        <Button as={Link} className="bg-transparent data-[hover=true]:bg-transparent" variant="light" href="/">
                             Home
                         </Button>
 
                         <Dropdown>
                             <NavbarItem>
                                 <DropdownTrigger>
-                                    <Button className="bg-[transparent] data-[hover=true]:bg-transparent" endContent={icons.menu_down} variant="light">
+                                    <Button className="bg-transparent data-[hover=true]:bg-transparent" endContent={icons.menu_down} variant="light">
                                         Program
                                     </Button>
                                 </DropdownTrigger>
@@ -140,7 +140,7 @@ const SiteNavbar = () => {
                         <Dropdown>
                             <NavbarItem>
                                 <DropdownTrigger>
-                                    <Button className="bg-[transparent] data-[hover=true]:bg-transparent" endContent={icons.menu_down} variant="light">
+                                    <Button className="bg-transparent data-[hover=true]:bg-transparent" endContent={icons.menu_down} variant="light">
                                         About
                                     </Button>
                                 </DropdownTrigger>

@@ -20,8 +20,8 @@ const Hero = ({ tag, heading, message, image }: { [key: string]: any }) => {
     return (
         // <div className="flex items-center justify-center h-screen mb-12 bg-fixed bg-center bg-cover custom-img">
         //     {/* Overlay */}
-        //     <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
-        //     <div className="p-10 pr-20 max-w-[1240px] text-white z-[2] mt-[-5rem]">
+        //     <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-2" />
+        //     <div className="p-10 pr-20 max-w-[1240px] text-white z-2 -mt-20">
         //         <h2 className="text-5xl font-bold">{heading}</h2>
         //         <p className="py-10 text-xl">{message}</p>
         //         <button className="px-8 py-2 border">Book</button>
@@ -37,7 +37,7 @@ const Hero = ({ tag, heading, message, image }: { [key: string]: any }) => {
                                     {/* <div className="tag pointer-events-none">{tag}</div> */}
                                 </div>
                                 {/* <div className="text-sm inline-flex border border-[#222]/10 px-3 py-1 rounded-lg tracking-tight">Version 2.0 is here</div> */}
-                                <h1 className="text-4xl md:text-[54px] lg:text-[60px] md:leading-[80px] font-black bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
+                                <h1 className="text-4xl md:text-[54px] lg:text-[60px] md:leading-[80px] font-black bg-linear-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none mt-5">
                                     {heading}
                                 </h1>
                                 <p className="text-base md:text-lg text-[#1d1004] mt-6 pointer-events-none">{message}</p>

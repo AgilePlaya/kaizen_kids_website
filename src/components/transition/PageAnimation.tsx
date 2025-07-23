@@ -96,7 +96,7 @@ export default function TransitionPage({ children }: { [key: string]: any }) {
             </div>
             <div
                 style={{ opacity: dimensions.width > 0 ? 0 : 1 }}
-                className="w-full h-[calc(100vh+800px)] top-[-400px] left=0 fixed pointer-events-none bg-black z-[38]"
+                className="w-full h-[calc(100vh+800px)] top-[-400px] left=0 fixed pointer-events-none bg-black z-38"
             />
             {dimensions.width > 0 && <SVG {...dimensions} />}
             {children}

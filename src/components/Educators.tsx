@@ -122,7 +122,7 @@ const EducatorsColumn: React.FC<{ className?: string; staffEntries: typeof staff
                             />
                             <div
                                 key={`staffcard-name-${key}`}
-                                className="text-2xl md:text-3xl md:px-2 lg:text-4xl lg:px-4 transition-all font-black bg-gradient-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none"
+                                className="text-2xl md:text-3xl md:px-2 lg:text-4xl lg:px-4 transition-all font-black bg-linear-to-b from-black to-[#5f2803] text-transparent bg-clip-text pointer-events-none"
                             >
                                 {name}
                             </div>
