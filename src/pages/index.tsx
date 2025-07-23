@@ -21,6 +21,7 @@ import ImImg1 from "@/../public/media/hero_media_resized.jpg";
 // });
 
 export default function Home() {
+    console.log("Page component is rendering");
     return (
         <>
             <Head>
