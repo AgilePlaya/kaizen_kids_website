@@ -1,11 +1,10 @@
 import imgSuchi from "../../public/staff/KK_Suchi.jpg";
 import imgKavita from "../../public/staff/KK_Kavita.jpg";
 import imgMaya from "../../public/staff/KK_Maya.jpg";
-import imgKajal from "../../public/staff/KK_Kajal.jpg";
-import imgNisha from "../../public/staff/KK_Nisha.jpg";
 import imgSarita from "../../public/staff/KK_Sarita.jpg";
 import imgPinky from "../../public/staff/KK_Pinky.jpg";
-import imgVikash from "../../public/staff/KK_Vikash.jpg";
+import imgShreya from "../../public/staff/KK_Shreya.jpg";
+import imgSoma from "../../public/staff/KK_Soma.jpg";
 
 import imgMale from "../../public/staff/placeholder_male.png";
 import imgFemale from "../../public/staff/placeholder_female.png";
@@ -43,17 +42,17 @@ const staffList = [
     },
     {
         key: 3,
-        name: "Kajal Kumari",
+        name: "Shreya Sharma",
         title: "",
-        imageSrc: imgKajal.src,
+        imageSrc: imgShreya.src,
         placeholder: imgPlaceF.src,
         color: "#33CC33",
     },
     {
         key: 4,
-        name: "Nisha Kumari",
+        name: "Soma Das",
         title: "",
-        imageSrc: imgNisha.src,
+        imageSrc: imgSoma.src,
         placeholder: imgPlaceF.src,
         color: "#33CC33",
     },
@@ -72,15 +71,7 @@ const staffList = [
         imageSrc: imgPinky.src,
         placeholder: imgPlaceF.src,
         color: "#FF3366",
-    },
-    {
-        key: 7,
-        name: "Vikash Mahato",
-        title: "",
-        imageSrc: imgVikash.src,
-        placeholder: imgPlaceM.src,
-        color: "#FF0066",
-    },
+    }
 ];
 
 function partition(array: typeof staffList, filter: any) {
